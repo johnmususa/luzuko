@@ -391,11 +391,17 @@ img{
 }
 .bio h3{
     color: white;
-    font-size: 25px;
-    letter-spacing: 3px;
+    font-size: 23px;
+    letter-spacing: 2px;
     font-weight: 520;
     font-family: "Oswald", sans-serif;
     margin-bottom: 15px;
+}
+.bio a{
+    font-size: 13px;
+    color: yellow;
+    letter-spacing: .1px;
+    font-weight: 400;
 }
 .display{
     max-width: 35rem;
@@ -1628,21 +1634,21 @@ footer a{
 @media screen and (max-width:768px){
     .sidebar{
         width: 47%;
-        height: 97dvh;
+        height: 85dvh;
         left: -40rem;   
     }
     .sidebar h4{
-        font-size: 23px;
+        font-size: 24px;
         letter-spacing: 3px;
-        font-weight: 550;
-        padding-top: 20px;
+        font-weight: 520;
+        padding-top: 25px;
         margin-bottom: 2.5rem;
     }
     .menu-tab{
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab li{
-        padding-bottom: 3rem;
+        padding-bottom: 3.5rem;
         list-style: none;
     }
     .menu-tab li a{
@@ -1654,36 +1660,36 @@ footer a{
         font-size: 17px;
         font-weight: 520px;
         letter-spacing: 1.5px;
-        padding-top: 20px;
+        padding-top: 25px;
     }
     .menu-btn{
-        margin-bottom: 140px;
+        margin-bottom: 130px;
     }
     .banner{
         width: 100%;
-        height: 97dvh;
+        height: 85dvh;
     }
     .outer{
         width: 100%;
-        height: 97dvh;
+        height: 85dvh;
     }
     .text-box{
-        width: 95%;
+        width: 97%;
         margin: auto;
         flex-grow: 1;
         flex-wrap: wrap;
     }
     .text-box h1{
-        font-size: 40px;
-        letter-spacing: 4px;
+        font-size: 53px;
+        letter-spacing: 6px;
         font-weight: 650;
-        line-height: 1.1;
+        line-height: 1.3;
         margin-bottom: 15px;
         padding-top:20px;
     }
     .text-box h2{
-        font-size: 23px;
-        letter-spacing: 3px;
+        font-size: 22px;
+        letter-spacing: 2px;
         font-weight: 400;
         padding-bottom: 10px;
     }
@@ -1693,9 +1699,9 @@ footer a{
         padding-top: 18px;
     }
     #about h2{
-        font-size: 23px;
+        font-size: 24px;
         letter-spacing: 1px;
-        font-weight: 600px;
+        font-weight: 200px;
         padding-bottom: 2px;
     }
     .solid-3{
@@ -1725,11 +1731,11 @@ footer a{
         width: 100%;
         align-items: flex-start;
         background-color: rgba(69, 88, 88, 0.445);
-        padding: 11px;
+        padding: 14px;
         border-radius: 5px;
     }
     .about-text h1{
-        font-size: 23px;
+        font-size: 24px;
         letter-spacing: 2px;
         padding-top: 15px;
         font-weight: 500;
@@ -1743,7 +1749,7 @@ footer a{
     .about-text p{
         font-size: 12px;
         letter-spacing: 1px;
-        line-height: 24px;
+        line-height: 27px;
         font-weight: 400;
     }
     /*///////////////////////////*/
@@ -1826,14 +1832,14 @@ footer a{
     }
     #events p{
         text-align: center;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 420;
         letter-spacing: .1px;
-        padding: 11px;
+        padding: 10px;
         flex-wrap: wrap;
-        line-height: 20px;
+        line-height: 22px;
         flex-grow: 1;
-        width: 77%;
+        width: 80%;
         margin: auto;
     }
     .gallery{
@@ -1882,15 +1888,15 @@ footer a{
         padding: 10px;
     }
     .socials-box h3{
-        font-size: 17px;
+        font-size: 18px;
         margin-bottom: 20px;
         padding-top: 10px;
         letter-spacing: 1.2px;
-        font-weight: 400px;
+        font-weight: 420px;
         align-items: flex-start;
     }
     .socials-box ul a{
-        padding-bottom: 12px;
+        padding-bottom: 13px;
     }
     .socials-box ul a{
         font-size: 13px;
@@ -1898,7 +1904,7 @@ footer a{
         font-weight: 400;
     }
     .socials-box ol li{
-        padding-bottom: 12px;
+        padding-bottom: 13px;
     }
     .socials-box ol li{
         font-size: 13px;
@@ -1907,12 +1913,12 @@ footer a{
     }
     .socials-box .last{
         list-style: none;
-        padding-bottom: 12px;
+        padding-bottom: 13px;
     }
     .socials-box .last li a{
         font-size: 12px;
         letter-spacing: 1px;
-        font-weight: 500px;
+        font-weight: 400px;
     }
     .footer-btn ion-icon{
         width: 30px;
@@ -1921,25 +1927,38 @@ footer a{
 }
 
 @media screen and (max-width:721px){
+     /*.sidebar{
+        width: 47%;
+        height: 85dvh;
+        left: -40rem;   
+    }
+    .banner{
+        width: 100%;
+        height: 85dvh;
+    }
+    .outer{
+        width: 100%;
+        height: 85dvh;
+    }*/
     .text-box h1{
         font-size: 50px;
-        letter-spacing: 3px;
+        letter-spacing: 6px;
         font-weight: 620;
-        line-height: 1.1;
-        margin-bottom: 12px;
+        line-height: 1.2;
+        margin-bottom: 13px;
         padding-top:20px;
     }
     .text-box h2{
-        font-size: 19px;
-        letter-spacing: 1px;
+        font-size: 20px;
+        letter-spacing: 2px;
         font-weight: 400;
         padding-bottom: 10px;
     }
     .about-text h1{
-        font-size: 20px;
-        letter-spacing: 1px;
-        padding-top: 13px;
-        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 2px;
+        padding-top: 15px;
+        font-weight: 450;
         padding-bottom: 3px;
     }
     .solid{
@@ -1948,9 +1967,9 @@ footer a{
         margin-bottom: 1.4rem;
     }
     .about-text p{
-        font-size: 11px;
+        font-size: 12px;
         letter-spacing: 1px;
-        line-height: 23px;
+        line-height: 26px;
         font-weight: 400;
     }
     .container-text{
@@ -1966,17 +1985,17 @@ footer a{
         margin-bottom: 15px;
     }
     .container-text p{
-        font-size: 12px;
-        letter-spacing: .1px;
+        font-size: 13px;
+        letter-spacing: 1px;
         font-weight: 400px;
-        line-height: 22px;
+        line-height: 23px;
         margin-bottom: 1.5rem;
     }
     .radio-btn{
         width: 11rem;
         text-align: center;
         margin: auto;
-        padding: 10px 10px;
+        padding: 12px 13px;
         outline: none;
         align-items: baseline;
         border: 1px solid white;
@@ -2007,14 +2026,15 @@ footer a{
     }
     #events p{
         text-align: center;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 400;
         letter-spacing: .1px;
         padding: 8px;
         flex-wrap: wrap;
-        line-height: 18px;
+        line-height: 20px;
         flex-grow: 1;
-        width: 80%;
+        width: 83%;
+        margin-bottom: 10px;
         margin: auto;
     }
     .gallery{
@@ -2054,12 +2074,12 @@ footer a{
         padding: 10px;
     }
     .socials-box h3{
-        font-size: 16px;
-        letter-spacing: 1px;
+        font-size: 18px;
+        letter-spacing: 1.3px;
         font-weight: 520;
     }
     .socials-box ul a{
-        padding-bottom: 11px;
+        padding-bottom: 12px;
     }
     .socials-box ul a{
         font-size: 12px;
@@ -2067,7 +2087,7 @@ footer a{
         font-weight: 400;
     }
     .socials-box ol li{
-        padding-bottom: 11px;
+        padding-bottom: 12px;
     }
     .socials-box ol li{
         font-size: 12px;
@@ -2076,28 +2096,28 @@ footer a{
     }
     .socials-box .last{
         list-style: none;
-        padding-bottom: 11px;
+        padding-bottom: 12px;
     }
     .socials-box .last li a{
         font-size: 12px;
         letter-spacing: .1px;
-        font-weight: 500px;
+        font-weight: 400px;
     }
     footer p{
         font-size: 12px;
         letter-spacing: 1px;
-        font-weight: 520px;
+        font-weight: 420px;
         padding-bottom: 7px;
     }
     footer a{
         font-size: 12px;
         letter-spacing: 1px;
-        font-weight: 520px;
+        font-weight: 420px;
         padding-bottom: 10px;
     }
     .footer-btn ion-icon{
-        width: 27px;
-        height: 27px;
+        width: 30px;
+        height: 30px;
     }
 }
 @media screen and (max-width:671px){
@@ -2121,21 +2141,21 @@ footer a{
 @media screen and (max-width:630px) {
     .sidebar{
         width: 55%;
-        height: 93dvh;
+        height: 80dvh;
         left: -40rem;   
     }
     .sidebar h4{
         font-size: 20px;
-        padding-top: 20px;
+        padding-top: 25px;
         letter-spacing: 2px;
         font-weight: 520;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
         margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 3rem;
+        padding-bottom: 3.4rem;
         list-style: none;
     }
     .menu-tab li a{
@@ -2153,10 +2173,10 @@ footer a{
         font-size: 16px;
         font-weight: 500px;
         letter-spacing: 1.3px;
-        padding-top: 20px;
+        padding-top: 25px;
     }
     .menu-btn{
-        margin-bottom: 140px;
+        margin-bottom: 130px;
     }
     .menu-btn ion-icon{
         width: 30px;
@@ -2164,23 +2184,23 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 93dvh;
+        height: 80dvh;
     }
     .outer{
         width: 100%;
-        height: 93dvh;
+        height: 80dvh;
     }
     .text-box h1{
         font-size: 45px;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
         font-weight: 600;
-        line-height: 1.1;
-        margin-bottom: 12px;
+        line-height: 1.2;
+        margin-bottom: 13px;
         padding-top:18px;
     }
     .text-box h2{
-        font-size: 16px;
-        letter-spacing: 2px;
+        font-size: 17px;
+        letter-spacing: 3px;
         font-weight: 400;
         padding-bottom: 10px;
     }
@@ -2191,9 +2211,9 @@ footer a{
     }
     .about-text h1{
         font-size: 21px;
-        letter-spacing: 1px;
-        padding-top: 12px;
-        font-weight: 500;
+        letter-spacing: 1.3px;
+        padding-top: 15px;
+        font-weight: 420;
         padding-bottom: 3px;
     }
     .solid{
@@ -2202,9 +2222,9 @@ footer a{
         margin-bottom: 1.3rem;
     }
     .about-text p{
-        font-size: 11px;
+        font-size: 12px;
         letter-spacing: .1px;
-        line-height: 20px;
+        line-height: 25px;
         font-weight: 400;
     }
     .container-text{
@@ -2215,21 +2235,21 @@ footer a{
     }
     .container-text h2{
         font-size: 30px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.7px;
         font-weight: 500;
         margin-bottom: 13px;
     }
     .container-text p{
-        font-size: 11px;
-        letter-spacing: .1px;
+        font-size: 12px;
+        letter-spacing: 1px;
         font-weight: 400px;
-        line-height: 20px;
+        line-height: 23px;
         margin-bottom: 1.3rem;
     }
     .radio-btn{
         width: 10rem;
         margin: auto;
-        padding: 10px 10px;
+        padding: 12px 13px;
         margin-bottom: 1.7rem;
         margin-top: 1.7rem;
         border-radius: 5px;
@@ -2244,7 +2264,7 @@ footer a{
         font-weight: 600px;
     }
     .bio h3{
-        font-size: 21px;
+        font-size: 24px;
         letter-spacing: 3px;
         font-weight: 500;
         margin-bottom: 15px;
@@ -2259,13 +2279,13 @@ footer a{
         margin:4px;
     }
     #events p{
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 400;
         letter-spacing: .1px;
-        padding: 9px;
-        line-height: 17px;
+        padding: 10px;
+        line-height: 19px;
         flex-grow: 1;
-        width: 80%;
+        width: 83%;
         margin: auto;
     }
     .gallery{
@@ -2299,21 +2319,21 @@ footer a{
 @media screen and (max-width:571px){
     .sidebar{
         width: 55%;
-        height: 90dvh;
+        height: 77dvh;
         left: -37rem;   
     }
     .sidebar h4{
         font-size: 20px;
         letter-spacing: 2px;
         font-weight: 520;
-        padding-top: 20px;
-        margin-bottom: 2rem;
+        padding-top: 25px;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
         margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.7rem;
+        padding-bottom: 3rem;
     }
     .menu-tab li a{
         font-size: 15px;
@@ -2324,7 +2344,7 @@ footer a{
         font-size: 16px;
         font-weight: 500px;
         letter-spacing: 1.3px;
-        padding-top: 20px;
+        padding-top: 25px;
     }
     .menu-btn{
         margin-bottom: 130px;
@@ -2334,11 +2354,11 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 90dvh;
+        height: 77dvh;
     }
     .outer{
         width: 100%;
-        height: 90dvh;
+        height: 77dvh;
     }
     .text-box{
         width: 96%;
@@ -2346,14 +2366,14 @@ footer a{
     }
     .text-box h1{
         font-size: 40px;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         font-weight: 600;
-        line-height: 1.1;
-        margin-bottom: 12px;
+        line-height: 1.2;
+        margin-bottom: 13px;
         padding-top:18px;
     }
     .text-box h2{
-        font-size: 15px;
+        font-size: 16px;
         letter-spacing: 2px;
         font-weight: 400;
         padding-bottom: 10px;
@@ -2363,7 +2383,7 @@ footer a{
         margin-bottom: 3rem;
     }
     #about h2{
-        font-size: 19px;
+        font-size: 23px;
         letter-spacing: 1px;
         font-weight: 520px;
         padding-bottom: 2px;
@@ -2380,8 +2400,8 @@ footer a{
         padding-bottom: 1.5rem;
     }
     .about-text h1{
-        font-size:18px;
-        letter-spacing: 1px;
+        font-size:19px;
+        letter-spacing: 1.5px;
         padding-top: 12px;
         font-weight: 500;
         padding-bottom: 3px;
@@ -2413,10 +2433,10 @@ footer a{
         margin-bottom: 12px;
     }
     .container-text p{
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: .1px;
         font-weight: 400px;
-        line-height: 18px;
+        line-height: 19px;
         margin-bottom: 1.3rem;
     }
     .radio-btn{
@@ -2495,10 +2515,10 @@ footer a{
     }
     .socials-box h3{
         font-size: 16px;
-        letter-spacing: 1px;
+        letter-spacing: 1.3px;
     }
     .socials-box ul a{
-        padding-bottom: 12,
+        padding-bottom: 14px,
     }
     .socials-box ul a{
         font-size: 13px;
@@ -2506,7 +2526,7 @@ footer a{
         font-weight: 400;
     }
     .socials-box ol li{
-        padding-bottom: 12px;
+        padding-bottom: 13px;
     }
     .socials-box ol li{
         font-size: 13px;
@@ -2515,27 +2535,27 @@ footer a{
     }
     .socials-box .last{
         list-style: none;
-        padding-bottom: 12px;
+        padding-bottom: 13px;
     }
     .socials-box .last li a{
         font-size: 13px;
         letter-spacing: .1px;
-        font-weight: 500px;
+        font-weight: 400px;
     }
 }
 @media screen and (max-width:533px){
     .text-box h1{
         font-size: 40px;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         font-weight: 600;
-        line-height: 1.1;
-        margin-bottom: 12px;
+        line-height: 1.2;
+        margin-bottom: 13px;
         padding-top:18px;
     }
     .text-box h2{
-        font-size: 15px;
-        letter-spacing: 1px;
-        font-weight: 450;
+        font-size: 19px;
+        letter-spacing: 1.5px;
+        font-weight: 420;
         padding-bottom: 10px;
     }
     .gallery{
@@ -2555,8 +2575,17 @@ footer a{
         margin: auto;
         margin-bottom: 1rem;
     }
+    .bio a{
+        font-size: 12px;
+        color: yellow;
+        letter-spacing: .1px;
+        font-weight: 400;
+    }
 }
 @media screen and (max-width:515px){
+    .sidebar{
+        height: 75dvh;
+    }
     .sidebar h4{
         font-size: 19px;
         letter-spacing: 1.5px;
@@ -2565,10 +2594,10 @@ footer a{
         margin-bottom: 2rem;
     }
     .menu-tab{
-        margin-bottom: 2.3rem;
+        margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.5rem;
+        padding-bottom: 3.3rem;
     }
     .menu-tab li a{
         font-size: 14px;
@@ -2580,6 +2609,14 @@ footer a{
         font-weight: 420px;
         letter-spacing: 1px;
         padding-top: 20px;
+    }
+    .banner{
+        width: 100%;
+        height: 75dvh;
+    }
+    .outer{
+        width: 100%;
+        height: 75dvh;
     }
     #events h2{
         font-size: 23px;
@@ -2638,7 +2675,7 @@ footer a{
 @media screen and (max-width:480px){
     .sidebar{
         width: 57%;
-        height: 85dvh;
+        height: 75dvh;
         left: -37rem;   
     }
     .sidebar h4{
@@ -2646,13 +2683,13 @@ footer a{
         letter-spacing: 1.5px;
         font-weight: 500;
         padding-top: 20px;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
-        margin-bottom: 1.7rem;
+        margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.5rem;
+        padding-bottom: 3rem;
     }
     .menu-tab li a{
         font-size: 14px;
@@ -2675,34 +2712,34 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 85dvh;
+        height: 75dvh;
     }
     .outer{
         width: 100%;
-        height: 85dvh;
+        height: 75dvh;
     }
     .text-box{
         width:97%;
     }
     .text-box h1{
-        font-size: 30px;
-        letter-spacing: 1.5px;
+        font-size: 37px;
+        letter-spacing: 3px;
         font-weight: 600;
-        line-height: 1.1;
+        line-height: 1.2;
         margin-bottom: 11px;
         padding-top:16px;
     }
     .text-box h2{
-        font-size: 13px;
+        font-size: 18px;
         letter-spacing: 1.5px;
-        font-weight: 420;
+        font-weight: 400;
         padding-bottom: 10px;
     }
 }
 @media screen and (max-width:469px){
     .sidebar{
         width: 57%;
-        height: 85dvh;
+        height: 75dvh;
         left: -37rem;   
     }
     .sidebar h4{
@@ -2710,13 +2747,13 @@ footer a{
         letter-spacing: 1.5px;
         font-weight: 500;
         padding-top: 20px;
-        margin-bottom: 1.7rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
         margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.5rem;
+        padding-bottom: 2.7rem;
     }
     .menu-tab li a{
         font-size: 14px;
@@ -2727,10 +2764,10 @@ footer a{
         font-size: 14px;
         font-weight: 400px;
         letter-spacing: 1.5px;
-        padding-top: 20px;
+        padding-top: 25px;
     }
     .menu-btn{
-        margin-bottom: 140px;
+        margin-bottom: 130px;
         margin-left: 5px;
         padding-top: 7px;
     }
@@ -2739,27 +2776,27 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 85dvh;
+        height: 75dvh;
     }
     .outer{
         width: 100%;
-        height: 85dvh;
+        height: 75dvh;
     }
     .text-box{
         width:97%;
     }
     .text-box h1{
-        font-size: 30px;
-        letter-spacing: 1.5px;
-        font-weight: 600;
-        line-height: 1.1;
+        font-size: 37px;
+        letter-spacing: 3px;
+        font-weight: 520;
+        line-height: 1.2;
         margin-bottom: 11px;
         padding-top:16px;
     }
     .text-box h2{
-        font-size: 13px;
+        font-size: 17px;
         letter-spacing: 1.5px;
-        font-weight: 420;
+        font-weight: 400;
         padding-bottom: 10px;
     }
     .solid-3{
@@ -2781,7 +2818,7 @@ footer a{
 @media screen and (max-width:425px){
     .sidebar{
         width: 60%;
-        height:83dvh;
+        height:70dvh;
         left: -35rem;     
     }
     .sidebar h4{
@@ -2789,13 +2826,13 @@ footer a{
         padding-top: 20px;
         letter-spacing: 1px;
         font-weight: 450;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.5rem;
+        padding-bottom: 2.7rem;
     }
     .menu-tab li a{
         font-size: 13px;
@@ -2809,7 +2846,7 @@ footer a{
         padding-top: 20px;
     }
     .menu-btn{
-        margin-bottom: 140px;
+        margin-bottom: 130px;
         margin-left: 5px;
         padding-top: 7px;
     }
@@ -2823,28 +2860,28 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 83dvh;
+        height: 70dvh;
     }
     .outer{
         width: 100%;
-        height: 83dvh;
+        height: 70dvh;
     }
     .text-box h1{
-        font-size: 27px;
-        letter-spacing: 2px;
+        font-size: 35px;
+        letter-spacing: 3px;
         font-weight: 550;
-        line-height: 1;
+        line-height: 1.1;
         margin-bottom: 10px;
         padding-top:14px;
     }
     .text-box h2{
-        font-size: 13px;
-        letter-spacing: 1px;
+        font-size: 16px;
+        letter-spacing: 1.7px;
         font-weight: 400;
         padding-bottom: 10px;
     }
     #about h2{
-        font-size: 18px;
+        font-size: 19px;
         letter-spacing: .1px;
         font-weight: 520px;
         padding-bottom: 2px;
@@ -2865,11 +2902,11 @@ footer a{
     }
     .about-text{
         width: 100%;
-        padding: 3px;
+        padding: 8px;
     }
     .about-text h1{
         font-size: 17px;
-        letter-spacing: 1px;
+        letter-spacing: 1.3px;
         padding-top: 10px;
         font-weight: 420;
         padding-bottom: 3px;
@@ -2882,7 +2919,7 @@ footer a{
     .about-text p{
         font-size: 10px;
         letter-spacing: 0;
-        line-height: 18px;
+        line-height: 20px;
         font-weight: 400;
     }
     .about-btn-2 .pdf-btn {
@@ -2931,10 +2968,16 @@ footer a{
         font-weight: 520px;
     }
     .bio h3{
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 18px;
+        letter-spacing: 1px;
         font-weight: 420;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
+    }
+    .bio a{
+        font-size: 10px;
+        color: yellow;
+        letter-spacing: .1px;
+        font-weight: 400;
     }
     .display{
         max-width: 31rem;
@@ -2961,8 +3004,8 @@ footer a{
         font-size: 10px;
         font-weight: 400;
         letter-spacing: 0;
-        padding: 6px;
-        line-height: 15px;
+        padding: 5px;
+        line-height: 16px;
         flex-grow: 1;
         width: 85%;
         margin: auto;
@@ -3002,16 +3045,16 @@ footer a{
         margin-bottom: 15px;
     }
     .socials-box h3{
-        font-size: 15px;
-        letter-spacing: 1px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
     }
     .socials-box ol li{
-        padding-bottom: 7px;
+        padding-bottom: 11px;
     }
     footer{
         width: 100%;
         padding-top: 18px;
-        padding-bottom: 10px;;
+        padding-bottom: 11px;;
     }
     .footer-btn{
         float: right;
@@ -3023,7 +3066,7 @@ footer a{
 @media screen and (max-width:414px) /*and (min-width:896px)*/{
     .sidebar{
         width: 58%;
-        max-height: 80dvh;
+        max-height: 70dvh;
         left: -35rem;   
     }
     .sidebar h4{
@@ -3031,13 +3074,13 @@ footer a{
         letter-spacing: 2px;
         font-weight: 420;
         padding-top:20px;
-        margin-bottom: 1.7rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
         margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.2rem;
+        padding-bottom: 2.6rem;
     }
     .menu-tab li a{
         font-size: 12px;
@@ -3062,17 +3105,17 @@ footer a{
     }
     .banner{
         width: 100%;
-        max-height: 80dvh;
+        max-height: 70dvh;
     }
     .outer{
         width: 100%;
-        max-height: 80dvh;
+        max-height: 70dvh;
     }
 }
 @media screen and (max-width:412px) /*and (max-width:915px)*/{
     .sidebar{
         width: 58%;
-        max-height: 80dvh;
+        max-height: 70dvh;
         left: -35rem;   
     }
     .sidebar h4{
@@ -3086,7 +3129,7 @@ footer a{
         margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2rem;
+        padding-bottom: 2.7rem;
     }
     .menu-tab li a{
         font-size: 12px;
@@ -3097,7 +3140,7 @@ footer a{
         font-size: 12px;
         font-weight: 400px;
         letter-spacing: 1.3px;
-        padding-top: 18px;
+        padding-top: 20px;
     }
     .menu-btn{
         margin-bottom: 140px;
@@ -3111,32 +3154,32 @@ footer a{
     }
     .banner{
         width: 100%;
-        max-height: 80dvh;
+        max-height: 70dvh;
     }
     .outer{
         width: 100%;
-        max-height: 80dvh;
+        max-height: 70dvh;
     }
 }
 @media screen and (max-width:375px){
     .sidebar{
         width: 58%;
-        height: 80dvh;
+        height: 70dvh;
         left: -35rem;   
     }
     .banner{
         width: 100%;
-        height: 80dvh;
+        height: 70dvh;
     }
     .outer{
         width: 100%;
-        height: 80dvh;
+        height: 70dvh;
     }
 }
 @media screen and (max-width:369px){
     .sidebar{
         width: 58%;
-        height: 77dvh;
+        height: 65dvh;
         left: -35rem;   
     }
     .sidebar h4{
@@ -3144,13 +3187,13 @@ footer a{
         letter-spacing: 2px;
         font-weight: 420;
         padding-top:20px;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2rem;
+        padding-bottom: 2.3rem;
     }
     .menu-tab li a{
         font-size: 12px;
@@ -3178,22 +3221,22 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 77dvh;
+        height: 65dvh;
     }
     .outer{
         width: 100%;
-        height: 77dvh;
+        height: 65dvh;
     }
     .text-box h1{
-        font-size: 25px;
-        letter-spacing: 1px;
+        font-size: 30px;
+        letter-spacing: 2px;
         font-weight: 520;
-        line-height: 1;
+        line-height: 1.1;
         margin-bottom: 11px;
         padding-top:15px;
     }
     .text-box h2{
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 1px;
         font-weight: 400;
         padding-bottom: 10px;
@@ -3221,7 +3264,7 @@ footer a{
     }
     .about-text h1{
         font-size: 15px;
-        letter-spacing: 1px;
+        letter-spacing: 1.3px;
         padding-top: 10px;
         font-weight: 400;
         padding-bottom: 3px;
@@ -3233,12 +3276,12 @@ footer a{
     }
     .about-text{
         width: 100%;
-        padding: 3px;
+        padding: 7px;
     }
     .about-text p{
         font-size:9px;
         letter-spacing: 0;
-        line-height: 17px;
+        line-height: 19px;
         font-weight: 400;
     }
     .about-btn-2 .pdf-btn {
@@ -3292,10 +3335,10 @@ footer a{
         font-size: 9px;
         font-weight: 400;
         letter-spacing: 0;
-        padding: 3px;
-        line-height: 14px;
+        padding: 2px;
+        line-height: 15px;
         flex-grow: 1;
-        width: 87%;
+        width: 88%;
         margin: auto;
         margin-bottom: 10px;
     }
@@ -3317,14 +3360,14 @@ footer a{
         margin-bottom: 13px;
     }
     .socials-box h3{
-        margin-bottom: 12px;
+        margin-bottom: 13px;
         font-size: 14px;
     }
     .socials-box ul a{
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
     .socials-box ul a{
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: .1px;
         font-weight: 400;
     }
@@ -3332,7 +3375,7 @@ footer a{
         padding-bottom: 10px;
     }
     .socials-box ol li{
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: .1px;
         font-weight: 400;
     }
@@ -3341,9 +3384,9 @@ footer a{
         padding-bottom: 10px;
     }
     .socials-box .last li a{
-        font-size: 10px;
+        font-size: 11px;
         letter-spacing: .1px;
-        font-weight: 500px;
+        font-weight: 400px;
     }
     footer p{
         font-size: 11px;
@@ -3368,21 +3411,21 @@ footer a{
 @media screen and (max-width:360px) /*and (max-width:640px)*/{
     .sidebar{
         width: 60%;
-        height: 75vh;
+        height: 65vh;
         left: -35rem;   
     }
     .sidebar h4{
         font-size: 15px;
         letter-spacing: 1px;
         font-weight: 420;
-        padding-top: 15px;
-        margin-bottom: 1.5rem;
+        padding-top: 20px;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
-        margin-bottom: 1.4rem;
+        margin-bottom: 2rem;
     }
     .menu-tab li{
-        padding-bottom: 2.2rem;
+        padding-bottom: 2.3rem;
     }
     .menu-tab li a{
         font-size: 12px;
@@ -3393,7 +3436,7 @@ footer a{
         font-size: 11px;
         font-weight: 520px;
         letter-spacing: 1.5px;
-        padding-top: 15px;
+        padding-top: 20px;
     }
     .menu-btn{
         margin-bottom: 130px;
@@ -3410,31 +3453,31 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 75dvh;
+        height: 65dvh;
     }
     .outer{
         width: 100%;
-        height: 75dvh;
+        height: 65dvh;
     }
 }
 @media screen and (max-width:340px){
     .sidebar{
         width: 60%;
-        height: 70vh;
+        height: 60vh;
         left: -35rem;   
     }
     .sidebar h4{
         font-size: 16px;
         letter-spacing: 1px;
         font-weight: 400;
-        padding-top: 15px;
-        margin-bottom: 1.5rem;
+        padding-top: 20px;
+        margin-bottom: 2rem;
     }
     .menu-tab{
         margin-bottom: 1rem;
     }
     .menu-tab li{
-        padding-bottom: 2rem;
+        padding-bottom: 2.3rem;
     }
     .menu-tab li a{
         font-size: 11px;
@@ -3445,10 +3488,10 @@ footer a{
         font-size: 11px;
         font-weight: 400px;
         letter-spacing: 1px;
-        padding-top: 15px;
+        padding-top: 18px;
     }
     .menu-btn{
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         margin-left: 2px;
         padding-top: 7px;
     }
@@ -3462,28 +3505,28 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 70vh;
+        height: 60vh;
     }
     .outer{
         width: 100%;
-        height: 70vh;
+        height: 60vh;
     }
 }
 @media screen and (max-width:320px){
     .sidebar{
         width: 60%;
-        height: 70vh;
+        height: 60vh;
         left: -35rem;   
     }
     .sidebar h4{
         font-size: 16px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-weight: 400;
-        padding-top: 15px;
-        margin-bottom: 1.5rem;
+        padding-top: 20px;
+        margin-bottom: 2.5rem;
     }
     .menu-tab{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .menu-tab li{
         padding-bottom: 2rem;
@@ -3497,10 +3540,10 @@ footer a{
         font-size: 11px;
         font-weight: 400px;
         letter-spacing: 1px;
-        padding-top: 15px;
+        padding-top: 18px;
     }
     .menu-btn{
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         margin-left: 2px;
         padding-top: 7px;
     }
@@ -3514,11 +3557,25 @@ footer a{
     }
     .banner{
         width: 100%;
-        height: 70vh;
+        height: 60vh;
     }
     .outer{
         width: 100%;
-        height: 70vh;
+        height: 60vh;
+    }
+    .text-box h1{
+        font-size: 27px;
+        letter-spacing: 2.3px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 10px;
+        padding-top:13px;
+    }
+    .text-box h2{
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 10px;
     }
     .about-box{
         padding: 5px;
@@ -3544,13 +3601,21 @@ footer a{
     }
     .about-text{
         width: 100%;
-        padding: 5px;
+        padding: 6px;
     }
     .about-text p{
         font-size:9px;
         letter-spacing: 0;
-        line-height: 18px;
+        line-height: 20px;
         font-weight: 400;
+    }
+    .about-btn-2 a{
+        font-size: 10px;
+    }
+    .about-btn-2 .pdf-btn {
+        padding: 8px 10px;
+        width: 12rem;
+        border-radius: 8px;
     }
     .footer-btn{
         margin-right: 3px;
