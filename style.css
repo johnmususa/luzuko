@@ -4,134 +4,63 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:"Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     transition: all .3s ease-in-out;
     scroll-behavior: smooth;
-}
-.sidebar{
-    width: 35%;
-    position: absolute;
-    height: 100%;
-    margin: auto;
-    left: -40rem;
-    z-index: 6;
-    padding: 10px 0;
-    scroll-behavior: smooth;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    text-align: center;
-    align-items: baseline;
-    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
-    display: block;
-    transition: left .6s cubic-bezier(1,0,0,1);
-}
-.sidebar h4{
-    font-size: 27px;
-    letter-spacing: 4px;
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
-    color: white;
-    padding-top: 30px;
-    font-weight: 650;
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 3.5rem;
-}
-.menu-tab{
-    margin-bottom: 2.7rem;
-}
-.menu-tab li{
-    padding-bottom: 3.7rem;
     list-style: none;
-}
-.menu-tab li a{
     text-decoration: none;
-    font-size: 18px;
+}
+nav{
+    background-image:linear-gradient(to top,rgb(1, 8, 66),
+    rgb(13, 10, 114));
+}
+.logo{
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
     letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 420;
+    font-weight: bold;
     color: white;
 }
-.menu-tab li a::before{
-	content: "";
-	width: 0;
-	height: .1rem;
-	background-color: yellow;
-	display: inline-block;
-	top: 22rem;
-	left: 2rem;
-	transition: width .5s cubic-bezier(1,0,0,1);
+.logo:hover{
+    color: white;
 }
-.menu-tab li a::after{
-	content: "";
-	width: 0rem;
-	height: .1rem;
-	background-color: yellow;
-	display: inline-block;
-	top: 22rem;
-	right:2rem;
-	transition: width .5s cubic-bezier(1,0,0,1);
+#main-nav ul li{
+    padding: 0px 2px;
 }
-.menu-tab li a:hover{
-	color: yellow;
-	transform: scale(1.1);
+#main-nav ul li a{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#main-nav ul li a:hover{
+    background-color: white;
+    color: black;
     cursor: pointer;
+    border-radius: 5px;
 }
-.menu-tab li a:hover::before{
-	width: 3rem;
+#main-nav .active{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
 }
-.menu-tab li a:hover::after{
-	width: 3rem;
+.youtube-btn{
+    margin-left: 2rem;
 }
-.sidebar p{
-    font-size: 20px;
-    color: white;
-    font-weight: 550px;
-    letter-spacing: 3px;
-    border-top: 1px solid white;
-    padding-top: 30px;
-}
-.menu-btn{
-    margin-left: 1rem;
-    padding-top: 20px;
-    margin-bottom: 150px;
-    cursor: pointer;
-    z-index: 12;
-}
-.menu-btn ion-icon{
-    width: 37px;
-    height: 37px;
-    border: 1px solid rgba(86, 112, 112, 0.555);
-    padding: 5px 5px;
-    color: white;
-    background-color: rgba(86, 112, 112, 0.555);
-}
-.checkbox:checked ~ .sidebar{
-	left: 4.4rem;
-}
-/*//////////////////////////////*/
 .banner{
     width: 100%;
-    height: 100dvh;
-    position: relative;
-    left: 0;
-    top: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     scroll-behavior: smooth;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
     animation: animate 16s ease-in-out infinite;
-}
-.outer{
-    left: 0;
-    top: 0;
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100dvh;
-    background-color:rgba(5, 5, 5, 0.562);
+    background-color:rgba(5, 5, 5, 0.562);    
 }
 .text-box{
-    width: 96%;
-    margin: auto;
     flex-grow: 1;
     flex-wrap: wrap;
     background-color: rgba(69, 88, 88, 0.445);
@@ -140,12 +69,11 @@
     border-radius: 5px;
     text-align: center;
     animation: animate 12s ease-in-out linear infinite;
-	background-size: cover;
+    background-size: cover;
 }
 .text-box h1{
-    font-size: 65px;
-    letter-spacing: 5px;
-    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 6px;
     color: white;
     font-family: "Oswald", sans-serif;
     line-height: 1.2;
@@ -161,83 +89,79 @@
     font-family: "Oswald", sans-serif;
 }
 @keyframes animate{
-	0%,100%{
-		background-image:url(images/banner.jpg);
-	}
-	25%{
-		background-image:url(images/banner-2.jpg);
-	}
-	50%{
-		background-image:url(images/banner-3.jpg);
-	}
+    0%,100%{
+        background-image:url(images/banner.jpg);
+    }
+    25%{
+        background-image:url(images/new-2.jpg);
+    }
+    50%{
+        background-image:url(images/banner-3.jpg);
+    }
+    60%{
+        background-image:url(images/new-1.jpg);
+    }
+    70%{
+        background-image:url(images/banner-2.jpg);
+    }
+    80%{
+        background-image:url(images/new-3.jpg);
+    }
+    90%{
+        background-image:url(images/new-4.jpg);
+    }
 }
-/*////////////////////////////*/
+/*/////////////////////////////////*/
+/*////////////////////////////////*/
 #about{
     width: 100%;
-    padding-top: 25px;
+    padding: 30px 0;
 }
 #about h2{
-    text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 1px;
-    font-weight: 650px;
-    padding-bottom: 3px;
     font-family: "Oswald", sans-serif;
 }
-.solid-3{
+.solid-1{
     width: 12rem;
     margin: auto;
+    color: black;
     margin-bottom:2rem;
 }
-.about-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin-bottom: 3rem;
+.main-about{
     background-image:linear-gradient(to right,rgb(1, 8, 66),
-	rgb(13, 10, 114));
+    rgb(13, 10, 114));
 }
-.about-img{
-    width: 35%;
-    height: 400px;
-}
-.about-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+.about-container{
+    margin-bottom: 4reem;
 }
 .about-text{
-    width: 60%;
     align-items: flex-start;
     background-color: rgba(69, 88, 88, 0.445);
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
 }
 .about-text h1{
-    font-size: 25px;
+    font-size: 27px;
     letter-spacing: 2px;
     color: white;
     padding-top: 15px;
     font-weight: 520;
     font-family: "Oswald", sans-serif;
-    padding-bottom: 3px;
     text-align: center;
 }
 .solid{
-    width: 16rem;
+    width: 18rem;
     margin: auto;
+    color: white;
     margin-bottom: 1.5rem;
 }
 .about-text p{
     font-size: 13px;
     letter-spacing: 1px;
     color: white;
-    line-height: 25px;
-    font-weight: 400;
+    line-height: 24px;
 }
 .about-btn-2{
     width: 75%;
@@ -283,8 +207,10 @@
 .slider{
     width: 80%;
     height: 250px;
-    margin: auto;
     display: grid;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     place-items: center;
     overflow: hidden;
     position: relative;
@@ -303,43 +229,34 @@
     }
 }
 .slide{
-	height: 200px;
-	width: 250px;
-	display: flex;
-
-	align-items: center;
-	padding: 15px;
-	perspective: 100px;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex: 1;
+    perspective: 100px;
 }
 img{
-	width: 100%;
+    width: 100%;
 }
-/*//////////////////////////////*/
+/*////////////////////////////////////*/
+/*///////////////////////////////////*/
 #presenter{
     width: 100%;
-    padding-top: 50px;
-}
-.pre-container{
-    width: 100%;
-    padding: 23px;
+    padding: 20px;
     background-image:linear-gradient(to right,rgb(1, 8, 66),
-	rgb(13, 10, 114));
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    rgb(13, 10, 114));
 }
-.container-text{
-    width: 50%;
+.col-text{
     border-right: .1px solid white;
     border-left: .1px solid white;
     border-bottom: .1px solid white;
     border-top: .1px solid white;
-    padding: 10px;
+    padding: 12px;
     align-items: flex-start;
 }
-.container-text h2{
+.col-text h2{
     color: white;
     font-size: 33px;
     padding-top: 10px;
@@ -348,20 +265,19 @@ img{
     font-family: "Oswald", sans-serif;
     margin-bottom: 15px;
 }
-.container-text p{
-    font-size: 13px;
+.col-text p{
+    font-size: 12px;
     letter-spacing: 1px;
-    font-weight: 430px;
-    line-height: 23px;
+    line-height: 22px;
     color: white;
     margin-bottom: 1.5rem;
 }
 .radio-btn{
-    width: 11rem;
-    padding: 10px 10px;
+    width: 9rem;
+    padding: 10px 8px;
     outline: none;
     border: 1px solid white;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     background-color:transparent;
     cursor: pointer;
     display: flex;
@@ -376,7 +292,7 @@ img{
 .radio-btn a{
     font-size: 15px;
     letter-spacing: 1px;
-    font-weight: 650px;
+    font-weight: 450px;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -387,24 +303,22 @@ img{
 }
 .radio-btn:active{
     transform: translateY(1.1rem);
-    transition: 1s ease;
+    transition: .1s ease;
 }
 .bio h3{
     color: white;
-    font-size: 23px;
+    font-size: 25px;
     letter-spacing: 2px;
-    font-weight: 520;
     font-family: "Oswald", sans-serif;
     margin-bottom: 15px;
 }
 .bio a{
-    font-size: 13px;
+    font-size: 14px;
     color: yellow;
     letter-spacing: .1px;
     font-weight: 400;
 }
-.display{
-    max-width: 35rem;
+.display-col{
     flex-grow: 1;
     text-align: center;
     cursor: pointer;
@@ -416,206 +330,188 @@ img{
     flex-wrap: wrap;
 }
 .image-wrapper{
-	width: 10rem;
-	flex-grow: 1;
-	height: 13rem;
-	margin:3px;
-	overflow: hidden;
+    width: 12rem;
+    flex-grow: 1;
+    height: 15rem;
+    margin:3px;
+    overflow: hidden;
 }
-.display .image{
-	width: 100%;
-	backface-visibility: hidden;
-	transition: all .5s;
-}
-.display .image:hover{
-	transform: scale(1.2);
-	opacity: .5;
-}
-/*////////////////////////////*/
-#events{
+.display-col .image{
     width: 100%;
-    padding-top: 20px;
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+.display-col .image:hover{
+    transform: scale(1.2);
+    opacity: .6;
+}
+/*////////////////////////////////////*/
+/*//////// Scan qr code /////////////*/
+.scan{
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    border-bottom: 1px solid lightgrey;
+}
+.scan h2{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 27px;
+}
+.scan img{
+    width: 100%;
+    height: 480px;
+    margin-bottom: 10px;
+}
+/*//////////////////////////////////*/
+/*/////////////////////////////////*/
+#events{
+    padding-top: 30px;
+    width: 100%;
 }
 #events h2{
     text-align: center;
-    font-size: 27px;
+    font-size: 35px;
     color:black;
-    letter-spacing: 1px;
-    font-weight: 700px;
+    letter-spacing: 2px;
     font-family: "Oswald", sans-serif;
     padding-bottom: 2px;
 }
 .e-solid{
-    width: 9rem;
+    width: 12rem;
     margin: auto;
+    color: black;
     margin-bottom: 10px;
 }
 #events p{
-    text-align: center;
-    font-size: 13px;
+    text-align: justify;
+    font-size: 14px;
     color: black;
-    font-weight: 420;
     letter-spacing: .1px;
     padding: 15px;
     flex-wrap: wrap;
-    line-height: 22px;
+    line-height: 24px;
     flex-grow: 1;
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
+
 .image-slider{
     display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    justify-content: center;
     background-image:linear-gradient(to right,rgb(1, 8, 66),
-	rgb(13, 10, 114));
+    rgb(13, 10, 114));
     flex-wrap: wrap;
     flex-grow: 1;
+    padding: 20px;
 }
 .gallery{
-	margin-top: 20px;
-    margin-bottom:40px;
-	width: 1000px;
-	display: flex;
-	cursor: pointer;
-	overflow-x: scroll;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    overflow-x: scroll;
+    border-radius: 10px;
+    border: .1px solid grey;
 }
 .gallery div{
-	width: 100%;
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 10px;
-	padding: 10px;
-	flex: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    flex: none;
 }
 .gallery div img{
-	width: 100%;
-	transition: 0.5s;
+    width: 100%;
+    transition: 0.5s;
 }
 #angle-gauche, #angle-droite{
-	width: 40px;
-	margin: 20px;
-	margin-top: 5%;
-	font-size: 40px;
-	cursor: pointer;
-    color: wheat;
+    width: 35px;
+    margin: 15px;
+    margin-top: 5%;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
 }
-/*//////////////////////////*/
+
+/*///////////////////////////////////*/
+/*//////////////////////////////////*/
 #contact{
-    width: 100%;
-    background-image:url(images/footer.jpg);
+    width:100%;
+    padding: 30px 10px;
+    background-image:linear-gradient(to bottom, #000, transparent),
+    url(images/footer.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 20px;
     border-top: 1px solid white;
-    padding-bottom: 2rem;
+    background-repeat: no-repeat;
 }
-#contact h4{
-    text-align: center;
-    font-size: 23px;
-    letter-spacing: 1px;
+#contact h3{
+    font-size: 27px;
+    letter-spacing: 1.5px;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-weight: 650px;
     padding-bottom: 3px;
 }
 .solid-2{
-    width: 11rem;
+    width: 15rem;
+    color: white;
     margin: auto;
     margin-bottom: 2rem;
 }
-.info{
-    width: 95%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    border-radius: 5px;
+
+.footer-row{
+    width: 90%;
     margin: auto;
-    background-color: rgba(96, 112, 112, 0.555);
-    padding: 20px;
-    backdrop-filter: blur(2px);
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
-.socials-box{
+.footer-col{
     align-items: flex-start;
-}
-.socials-box h3{
     text-align: center;
-    align-items: flex-start;
-    font-size: 20px;
-    margin-bottom: 25px;
-    padding-top: 10px;
+}
+.footer-col h4{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
     font-family: "Oswald", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 27px;
+}
+.footer-col ul li, a{
+    font-size: 17px;
     letter-spacing: 1px;
     color: white;
-    font-weight: 550px;
-}
-.socials-box ul a{
-    padding-bottom: 14px;
-}
-.socials-box ul a{
-    display: block;
-    text-decoration:underline;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 420;
-}
-.socials-box ul ion-icon{
-    padding-right: 5px;
-}
-.socials-box ol li{
-    padding-bottom: 13px;
-}
-.socials-box ol li{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 420;
-}
-.socials-box .last{
-    list-style: none;
-    padding-bottom: 13px;
-}
-.socials-box .last li a{
-    display: block;
-    text-decoration: underline;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 2px;
     font-weight: 520px;
+    padding-bottom: 12px;
 }
-.socials-box ul a:hover,.socials-box ol li:hover
-,.socials-box .last li a:hover{
+.footer-col ion-icon{
+    margin-right: 3px;
+}
+.footer-col ul li:hover, a:hover{
     color: yellow;
-    cursor: pointer;   
+    cursor: pointer;
 }
-footer{
+.end{
+    padding: 20px;
     width: 100%;
     background-image:linear-gradient(to top,rgb(1, 8, 66),
-	rgb(13, 10, 114));
-    padding-top: 23px;
-    padding-bottom: 10px;
+    rgb(13, 10, 114));
     border-top: 1px solid white;
-    text-align: center;
 }
-footer p{
-    font-size: 16px;
-    letter-spacing: 1px;
+.end p{
+    font-size: 18px;
+    letter-spacing: 1.5px;
     color: white;
-    font-weight: 520px;
-    padding-bottom: 10px;
 }
-footer a{
-    font-size: 16px;
-    letter-spacing: 1px;
+.end a{
+    font-size: 20px;
+    letter-spacing: 1.5px;
     color: white;
-    font-weight: 520px;
-    padding-bottom: 10px;
 }
 .footer-btn{
     float: right;
@@ -624,7 +520,7 @@ footer a{
     margin-right: 10px;
     position:fixed;
     background-color: #ffffffd2;
-    border-radius: 5px 5px;
+    border-radius: 5px;
     border: 1px solid #000;
 }
 .footer-btn ion-icon{
@@ -632,1169 +528,121 @@ footer a{
     height: 35px;
     color: blue;
 }
-/*///////////////////////////////////*/
-/*//////responsive view point///////*/
-@media screen and (max-width:1232px){
-    .sidebar{
-        width: 35%;
-        position: absolute;
-        height: 100dvh;
-    }
-    .sidebar h4{
-        font-size: 27px;
-        letter-spacing: 3px;
-        padding-bottom: 20px;
-        font-weight: 650;
-        padding-top: 30px;
-        margin-bottom: 3.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2.7rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.7rem;
-        list-style: none;
-    }
-    .menu-tab li a{
+.footer-btn:hover, ion-icon:hover{
+    background-color: rgb(255, 265, 255, .2);
+    color: white;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+/*////////start  of responsive view//////////*/
+/*//////////////////////////////////////////*/
+@media screen and (max-width:1199px){
+    .logo{
         font-size: 20px;
-        letter-spacing: 3px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: bold;
         color: white;
-        font-weight: 550px;
-        letter-spacing: 3px;
-        padding-top: 35px;
     }
-    .menu-btn{
-        margin-left: 1rem;
-        padding-top: 20px;
-        margin-bottom: 160px;
-        cursor: pointer;
-        z-index: 12;
+    #main-nav ul li{
+        padding: 0px 1px;
     }
-    /*//////////////////////////////*/
-    .banner{
-        width: 100%;
-        height: 100dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 100dvh;
+    #main-nav ul li a{
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
     }
     .text-box{
-        width: 95%;
-        margin: auto;
-    }
-}
-@media screen and (max-width:1200px){
-    .sidebar{
-        width: 35%;
-        position: absolute;
-        height: 100dvh;
-    }
-    .sidebar h4{
-        font-size: 27px;
-        letter-spacing: 3px;
-        padding-bottom: 10px;
-        font-weight: 650;
-        margin-bottom: 4.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 3rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.7rem;
-        list-style: none;
-    }
-    .menu-tab li a{
-        font-size: 20px;
-        letter-spacing: 3px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 20px;
-        color: white;
-        font-weight: 550px;
-        letter-spacing: 3px;
-        padding-top: 35px;
-    }
-    .menu-btn{
-        margin-left: 1rem;
-        padding-top: 20px;
-        margin-bottom: 160px;
-        cursor: pointer;
-        z-index: 12;
-    }
-    /*//////////////////////////////*/
-    .banner{
-        width: 100%;
-        height: 100dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 100dvh;
-    }
-    .text-box{
-        width: 96%;
-        margin: auto;
-    }
-}
-@media screen and (max-width:1158px){
-    .pre-container{
-        width: 100%;
-        padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
         flex-grow: 1;
-    }
-    .container-text{
-        width: 50%;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding: 10px;
+        flex-wrap: wrap;
+        background-color: rgba(69, 88, 88, 0.445);
         align-items: flex-start;
-    }
-    .container-text h2{
-        font-size: 25px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        padding-top: 10px;
-        margin-bottom: 15px;
-    }
-    .container-text p{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        line-height: 23px;
-        margin-bottom: 1.5rem;
-    }
-    .radio-btn{
-        width: 10rem;
-        padding: 10px 10px;
-        margin-bottom: 1.5rem;
-        display: flex;
-    }
-    .radio-btn ion-icon{
-        width: 25px;
-        height: 18px;
-    }
-    .radio-btn a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 600px;
-    }
-    .bio h3{
-        font-size: 23px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        margin-bottom: 15px;
-    }
-    .display{
-        max-width: 30rem;
-        flex-grow: 1;
-    }
-    .image-wrapper{
-        width: 9rem;
-        flex-grow: 1;
-        height: 12rem;
-        margin:3px;
-        overflow: hidden;
-    }
-    /*///////////////////////////*/
-    #events h2{
-        text-align: center;
-        font-size: 27px;
-        letter-spacing: 1px;
-        font-weight: 650px;
-        padding-bottom: 2px;
-    }
-    .e-solid{
-        width: 8rem;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    #events p{
-        text-align: center;
-        font-size: 12px;
-        font-weight: 420;
-        letter-spacing: .1px;
         padding: 15px;
-        flex-wrap: wrap;
-        line-height: 22px;
-        flex-grow: 1;
-        width: 73%;
-        margin: auto;
-    }
-    .gallery{
-        margin-top: 30px;
-        margin-bottom:40px;
-        width: 880px;
-        display: flex;
-        cursor: pointer;
-        background-color: rgb(12, 12, 69);
-        border-radius: 5px;
-        overflow-x: scroll;
-    }
-    .gallery div{
-        width: 95%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    .gallery div img{
-        width: 100%;
-        transition: 0.5s;
-    }
-    #angle-gauche, #angle-droite{
-        width: 30px;
-        margin: 10px;
-        margin-top: 3%;
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:1024px){
-    .sidebar{
-        width: 40%;
-        left: -40rem;   
-    }
-    .sidebar h4{
-        font-size: 25px;
-        letter-spacing: 3px;
-        font-weight: 620;
-        padding-top: 30px;
-        margin-bottom: 4.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 3.5rem;
-    }
-    .menu-tab li{
-        padding-bottom: 4rem;
-        list-style: none;
-    }
-    .menu-tab li a{
-        font-size: 18px;
-        letter-spacing: 3px;
-        font-weight: 420;
-    }
-    .menu-btn{
-        margin-left: 1rem;
-        padding-top: 20px;
-        margin-bottom: 160px;
-        cursor: pointer;
-        z-index: 12;
-    }
-    /*//////////////////////////*/
-    .text-box{
-        width: 95%;
-        margin: auto;
-        flex-grow: 1;
-        flex-wrap: wrap;
-    }
-    .about-box{
-        display: flex;   
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        margin-bottom: 3rem;
-    }
-    .about-img{
-        width: 35%;
-        height: 360px;
-    }
-    .about-img img{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
     }
     .about-text{
-        width: 57%;
-        align-items: flex-start;
-        padding: 10px;
-    }
-    .about-text h1{
-        font-size: 21px;
-        letter-spacing: 1px;
-        padding-top: 12px;
-        font-weight: 500;
-        padding-bottom: 2px;
-    }
-    .solid{
-        width: 12rem;
-        margin: auto;
-        margin-bottom: 1.5rem;
-    }
-    .about-text p{
-        font-size: 12px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        font-weight: 400;
-    }
-    /*/////////////////////*/
-    .pre-container{
-        width: 100%;
         padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-grow: 1;
-    }
-    .container-text{
-        width: 45%;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding: 10px;
-        align-items: flex-start;
-    }
-    .container-text h2{
-        font-size: 25px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        margin-bottom: 15px;
-    }
-    .container-text p{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        line-height: 23px;
-        margin-bottom: 1.5rem;
-    }
-    .radio-btn{
-        width: 10rem;
-        padding: 10px 10px;
-        margin-bottom: 1.5rem;
-        display: flex;
-    }
-    .radio-btn ion-icon{
-        width: 25px;
-        height: 18px;
-    }
-    .radio-btn a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 600px;
-    }
-    .bio h3{
-        font-size: 25px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        margin-bottom: 15px;
-    }
-    .display{
-        max-width: 30rem;
-        flex-grow: 1;
-    }
-    .image-wrapper{
-        width: 9rem;
-        flex-grow: 1;
-        height: 12rem;
-        margin:3px;
-        overflow: hidden;
-    }
-    /*///////////////////////////*/
-    #events h2{
-        text-align: center;
-        font-size: 30px;
-        letter-spacing: 1px;
-        font-weight: 650px;
-        padding-bottom: 2px;
-    }
-    .e-solid{
-        width: 7rem;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    #events p{
-        text-align: center;
-        font-size: 12px;
-        font-weight: 420;
-        letter-spacing: .1px;
-        padding: 15px;
-        flex-wrap: wrap;
-        line-height: 22px;
-        flex-grow: 1;
-        width: 73%;
-        margin: auto;
-    }
-    .gallery{
-        margin-top: 30px;
-        margin-bottom:40px;
-        width: 890px;
-        display: flex;
-        cursor: pointer;
-        background-color: rgb(12, 12, 69);
-        border-radius: 5px;
-        overflow-x: scroll;
-    }
-    .gallery div{
-        width: 95%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    .gallery div img{
-        width: 90%;
-        transition: 0.5s;
-    }
-    #angle-gauche, #angle-droite{
-        width: 30px;
-        margin: 5px;
-        margin-top: 5%;
-        font-size: 30px;
-    }
-    #contact h4{
-        font-size: 23px;
-        letter-spacing: 1px;
-        font-weight: 620px;
-        padding-bottom: 3px;
-    }
-    .solid-2{
-        width: 10rem;
-        margin: auto;
-        margin-bottom: 2rem;
-    }
-    .info{
-        width: 97%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        padding: 15px;
-    }
-    .socials-box h3{
-        font-size: 19px;
-        margin-bottom: 20px;
-        padding-top: 10px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-    }
-    .socials-box ul a{
-        padding-bottom: 14px;
-    }
-    .socials-box ul a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 420;
-    }
-    .socials-box ol li{
-        padding-bottom: 13px;
-    }
-    .socials-box ol li{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 420;
-    }
-    .socials-box .last{
-        list-style: none;
-        padding-bottom: 13px;
-    }
-    .socials-box .last li a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 520px;
-    }
-    footer p{
-        font-size: 14px;
-        letter-spacing: 1px;
-        font-weight: 520px;
-        padding-bottom: 10px;
-    }
-    footer a{
-        font-size: 14px;
-        letter-spacing: 1px;
-        font-weight: 520px;
-        padding-bottom: 10px;
-    }
-    .footer-btn{
-        float: right;
-        bottom: 30px;
-        margin-right: 12px;
-    }
-    .footer-btn ion-icon{
-        width: 33px;
-        height: 33px;
-    }
-}
-@media screen and (max-width:975px){
-    .sidebar{
-        width: 40%;
-        height: 95dvh;
-        left: -40rem;   
-    }
-    .sidebar h4{
-        padding-top: 25px;
-    }
-    .menu-tab{
-        margin-bottom: 3rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.5rem;
-        list-style: none;
-    }
-    .menu-tab li a{
-        font-size: 18px;
-        letter-spacing: 3px;
-        font-weight: 420;
-    }
-    .menu-btn{
-        margin-bottom: 160px;
-    }
-    .banner{
-        width: 100%;
-        height: 95dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 95dvh;
-    }
-    .container-text p{
-        font-size: 12px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-        line-height: 19px;
-        margin-bottom: 1.5rem;
-    }
-    #events h2{
-        text-align: center;
-        font-size: 25px;
-        letter-spacing: 1px;
-        font-weight: 620px;
-        padding-bottom: 2px;
-    }
-    .e-solid{
-        width: 8rem;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    #events p{
-        font-size: 12px;
-        font-weight: 420;
-        letter-spacing: .1px;
-        padding: 13px;
-        flex-wrap: wrap;
-        line-height: 20px;
-        flex-grow: 1;
-        width: 77%;
-        margin: auto;
-    }
-    .gallery{
-        margin-top: 30px;
-        margin-bottom:40px;
-        width: 800px;
-        display: flex;
-    }
-    .gallery div{
-        width: 90%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    .gallery div img{
-        width: 100%;
-        transition: 0.5s;
-    }
-    #angle-gauche, #angle-droite{
-        width: 30px;
-        margin: 5px;
-        margin-top: 5%;
-        font-size: 30px;
-    }
-    #contact h4{
-        font-size: 20px;
-        letter-spacing: 1px;
-        font-weight: 520px;
-        padding-bottom: 3px;
-    }
-    .solid-2{
-        width: 9rem;
-        margin: auto;
-        margin-bottom: 1.5rem;
-    }
-    .info{
-        width: 97%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        padding: 12px;
-    }
-    .socials-box h3{
-        font-size: 18px;
-        margin-bottom: 18px;
-        padding-top: 10px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-    }
-    .socials-box ul a{
-        padding-bottom: 15px;
-    }
-    .socials-box ul a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 420;
-    }
-    .socials-box ol li{
-        padding-bottom: 14px;
-    }
-    .socials-box ol li{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 420;
-    }
-    .socials-box .last{
-        list-style: none;
-        padding-bottom: 14px;
-    }
-    .socials-box .last li a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 520px;
-    }
-}
-@media screen and (max-width:907px){
-    .sidebar{
-        width: 43%;
-        height: 95dvh;
-        left: -40rem;   
-        padding-top: 0;
-    }
-    .sidebar h4
-    {
-        padding-top: 40px;
-    }
-    .menu-btn{
-        margin-bottom: 160px;
-    }
-    .banner{
-        width: 100%;
-        height: 95dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 95dvh;
-    }
-    .text-box{
-        width: 95%;
-        margin: auto;
-        flex-grow: 1;
-        flex-wrap: wrap;
-    }
-    #about h2{
-        font-size: 27px;
-        letter-spacing: 1px;
-        font-weight: 650px;
-        padding-bottom: 2px;
-    }
-    .solid-3{
-        width: 10rem;
-        margin: auto;
-        margin-bottom:2rem;
-    }
-    .about-img{
-        width: 37%;
-        height: 360px;
-    }
-    .about-img img{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .about-text{
-        width: 60%;
-        align-items: flex-start;
-        padding: 8px;
-    }
-    .about-text h1{
-        font-size: 20px;
-        letter-spacing: 1px;
-        padding-top: 12px;
-        font-weight: 500;
-        padding-bottom: 2px;
-    }
-    .solid{
-        width: 12rem;
-        margin: auto;
-        margin-bottom: 1.5rem;
-    }
-    .about-text p{
-        font-size: 12px;
-        letter-spacing: .1px;
-        line-height: 23px;
-        font-weight: 400;
-    }
-    /*/////////////////////*/
-    .pre-container{
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-grow: 1;
-    }
-    .container-text{
-        width: 46%;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding: 8px;
-        align-items: flex-start;
-    }
-    .container-text h2{
-        font-size: 23px;
-        letter-spacing: 1px;
-        font-weight: 520;
-        margin-bottom: 13px;
-    }
-    .container-text p{
-        font-size: 12px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-        line-height: 20px;
-        margin-bottom: 1.3rem;
-    }
-    .radio-btn{
-        width: 9rem;
-        padding: 10px 10px;
-        margin-bottom: 1.5rem;
-        display: flex;
-    }
-    .radio-btn ion-icon{
-        width: 23px;
-        height: 18px;
-    }
-    .radio-btn a{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 550px;
-    }
-    .bio h3{
-        font-size: 22px;
-        letter-spacing: 1.3px;
-        font-weight: 520;
-        margin-bottom: 13px;
-    }
-    .display{
-        max-width: 27rem;
-        flex-grow: 1;
-    }
-    .image-wrapper{
-        width: 7rem;
-        flex-grow: 1;
-        height: 10rem;
-        margin:2px;
-        overflow: hidden;
-    }
-    /*///////////////////*/
-    #events{
-        padding-top: 10px;
-    }
-    .gallery{
-        margin-top: 30px;
-        margin-bottom:30px;
-        width: 750px;
-        display: flex;
-    }
-    .gallery div{
-        width: 80%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    .gallery div img{
-        width: 100%;
-        transition: 0.5s;
-    }
-    #angle-gauche, #angle-droite{
-        width: 30px;
-        margin: 5px;
-        margin-top: 5%;
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:835px){
-    .sidebar{
-        width: 43%;
-        height: 90dvh;
-        left: -40rem;   
-    }
-    .sidebar h4{
-        font-size: 25px;
-        padding-top: 30px;
-        letter-spacing: 3px;
-        font-weight: 620;
-        margin-bottom: 3rem;
-    }
-    .menu-tab{
-        margin-bottom: 2.7rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.5rem;
-        list-style: none;
-    }
-    .menu-tab li a{
-        font-size: 18px;
-        letter-spacing: 3px;
-        font-weight: 420;
-    }
-    .menu-btn{
-        margin-left: 1rem;
-        padding-top: 20px;
-        margin-bottom: 170px;
-        cursor: pointer;
-        z-index: 12;
-    }
-    .menu-tab p{
-        padding-top: 15px;
-    }
-    .menu-btn{
-        margin-bottom: 150px;
-    }
-    .banner{
-        width: 100%;
-        height: 90dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 90dvh;
-    }
-    .text-box{
-        width: 95%;
-        margin: auto;
-        flex-grow: 1;
-        flex-wrap: wrap;
     }
     .text-box h1{
-        font-size: 57px;
-        letter-spacing: 4px;
-        font-weight: 700;
+        font-size: 63px;
+        letter-spacing: 5px;
+        color: white;
         line-height: 1.2;
-        margin-bottom: 15px;
-        padding-top:25px;
-    }
-    .text-box h2{
-        font-size: 21px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        padding-bottom: 25px;
-    }
-    .about-box{
-        display: flex;   
-        justify-content: space-between;
-        align-items: center;
-        padding: 7px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        margin-bottom: 3rem;
-    }
-    .about-img{
-        width: 37%;
-        height: 250px;
-    }
-    .about-img img{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .about-text{
-        width: 61%;
-        align-items: flex-start;
-        padding: 7px;
-    }
-    .about-text h1{
-        font-size: 18px;
-        letter-spacing: 1px;
-        padding-top: 10px;
-        font-weight: 500;
-        padding-bottom: 2px;
-    }
-    .solid{
-        width: 11rem;
-        margin: auto;
-        margin-bottom: 1.3rem;
-    }
-    .about-text p{
-        font-size: 11px;
-        letter-spacing: .1px;
-        line-height: 22px;
-        font-weight: 400;
-    }
-    /*/////////////////////*/
-    .pre-container{
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-grow: 1;
-    }
-    .container-text{
-        width: 44%;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        padding: 7px;
-        align-items: flex-start;
-    }
-    .container-text h2{
-        font-size: 20px;
-        letter-spacing: 1px;
-        font-weight: 520;
-        margin-bottom: 12px;
-    }
-    .container-text p{
-        font-size: 11px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-        line-height: 20px;
-        margin-bottom: 1.3rem;
-    }
-    .radio-btn{
-        width: 9rem;
-        padding: 10px 10px;
-        margin-bottom: 1.5rem;
-        display: flex;
-    }
-    .radio-btn ion-icon{
-        width: 22px;
-        height: 17px;
-    }
-    .radio-btn a{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 550px;
-    }
-    .bio h3{
-        font-size: 19px;
-        letter-spacing: 1.1px;
-        font-weight: 500;
-        margin-bottom: 13px;
-    }
-    .display{
-        max-width: 25rem;
-        flex-grow: 1;
-    }
-    .image-wrapper{
-        width: 7rem;
-        flex-grow: 1;
-        height: 9rem;
-        margin:2px;
-        overflow: hidden;
-    }
-    .gallery{
-        margin-top: 30px;
-        margin-bottom:30px;
-        width: 700px;
-        display: flex;
-    }
-    .gallery div{
-        width: 80%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    .gallery div img{
-        width: 100%;
-        transition: 0.5s;
-    }
-    #angle-gauche, #angle-droite{
-        width: 30px;
-        margin: 5px;
-        margin-top: 5%;
-        font-size: 30px;
-    }
-}
-/*//////////mobile responsive view////////////////*/
-/*///////////////////////////////////////////////*/
-@media screen and (max-width:768px){
-    .sidebar{
-        width: 47%;
-        height: 85dvh;
-        left: -40rem;   
-    }
-    .sidebar h4{
-        font-size: 24px;
-        letter-spacing: 3px;
-        font-weight: 520;
-        padding-top: 25px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.5rem;
-        list-style: none;
-    }
-    .menu-tab li a{
-        font-size: 17px;
-        letter-spacing: 2px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 17px;
-        font-weight: 520px;
-        letter-spacing: 1.5px;
-        padding-top: 25px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-    }
-    .banner{
-        width: 100%;
-        height: 85dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 85dvh;
-    }
-    .text-box{
-        width: 97%;
-        margin: auto;
-        flex-grow: 1;
-        flex-wrap: wrap;
-    }
-    .text-box h1{
-        font-size: 53px;
-        letter-spacing: 6px;
-        font-weight: 650;
-        line-height: 1.3;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         padding-top:20px;
     }
     .text-box h2{
-        font-size: 22px;
+        font-size: 23px;
         letter-spacing: 2px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    /*////////////////////////////*/
-    #about{
-        width: 100%;
-        padding-top: 18px;
-    }
-    #about h2{
-        font-size: 24px;
-        letter-spacing: 1px;
-        font-weight: 200px;
-        padding-bottom: 2px;
-    }
-    .solid-3{
-        width: 9rem;
-        margin: auto;
-        margin-bottom:1rem;
-    }
-    .about-box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 20px;
-        margin-bottom: 3rem;
-    }
-    .about-img{
-        width: 55%;
-        height: 350px;
-        margin-bottom: 1.3rem;
-    }
-    .about-img img{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .about-text{
-        width: 100%;
-        align-items: flex-start;
-        background-color: rgba(69, 88, 88, 0.445);
-        padding: 14px;
-        border-radius: 5px;
+        color: white;
+        padding-bottom: 25px;
     }
     .about-text h1{
-        font-size: 24px;
-        letter-spacing: 2px;
+        font-size: 23px;
+        letter-spacing: 1px;
         padding-top: 15px;
-        font-weight: 500;
-        padding-bottom: 3px;
     }
     .solid{
-        width: 15rem;
+        width: 14rem;
         margin: auto;
+        color: white;
         margin-bottom: 1.5rem;
     }
     .about-text p{
         font-size: 12px;
         letter-spacing: 1px;
-        line-height: 27px;
-        font-weight: 400;
+        color: white;
+        text-align: justify;
+        line-height: 22px;
     }
-    /*///////////////////////////*/
-    .pre-container{
-        width: 100%;
-        padding: 20px;
-        display: flex;
+    .about-btn-2{
+        width: 75%;
+        margin: auto;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
-        flex-grow: 1;
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
     }
-    .container-text{
-        width: 80%;
-        flex-grow: 1;
-        text-align: center;margin-bottom: 1.5rem;
-        justify-self: center;
-        border-right: .1px solid white;
-        border-left: .1px solid white;
-        padding: 10px;
-        align-items: center;
+    .about-btn-2 .pdf-btn {
+        padding: 12px 23px;
+        text-transform: uppercase;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: transparent;
+        border: 1px solid #ffffff80;
+        transition: 0.5s ease;
+        box-shadow: 0 0 10px #fff;
+        user-select: none;
     }
-    .container-text h2{
-        font-size: 35px;
-        letter-spacing: 2px;
-        font-weight: 520;
+    .pdf-btn a{
+        letter-spacing: 1px;
+        font-size: 11px;
+    }
+    /*////////////////////////////////////*/
+    /*///////////////////////////////////*/
+    #presenter{
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .col-text h2{
+        font-size: 30px;
+        padding-top: 10px;
+        letter-spacing: 1.5px;
         margin-bottom: 15px;
     }
-    .container-text p{
-        font-size: 12px;
+    .col-text p{
+        font-size: 11px;
         letter-spacing: 1px;
-        font-weight: 400px;
-        line-height: 23px;
+        line-height: 21px;
+        color: white;
         margin-bottom: 1.5rem;
     }
     .radio-btn{
-        width: 10rem;
-        text-align: center;
-        margin: auto;
+        width: 11rem;
         padding: 10px 10px;
         outline: none;
         border: 1px solid white;
-        margin-bottom: 1.7rem;
-        margin-top: 1.7rem;
+        margin-bottom: 2.5rem;
         background-color:transparent;
         cursor: pointer;
         display: flex;
@@ -1802,60 +650,81 @@ footer a{
         border-radius: 5px;
     }
     .radio-btn ion-icon{
-        width: 25px;
-        height: 18px;
+        width: 20px;
+        height: 16px;
+        color: white;
     }
     .radio-btn a{
-        font-size: 15px;
+        font-size: 13px;
         letter-spacing: 1px;
-        font-weight: 650px;
-        text-decoration: none;
     }
     .bio h3{
+        color: white;
         font-size: 23px;
-        letter-spacing: 4px;
-        font-weight: 520;
-        margin-bottom: 15px;
+        letter-spacing: 1.5px;
     }
-    .display{
-        max-width: 37rem;
-        flex-grow: 1;
-        text-align: center;
-        cursor: pointer;
+    .bio a{
+        font-size: 12px;
+        color: yellow;
+        letter-spacing: .1px;
     }
     .image-wrapper{
         width: 10rem;
         flex-grow: 1;
-        height: 14rem;
+        height: 12rem;
         margin:3px;
         overflow: hidden;
     }
-    #events p{
+    #events h2{
         text-align: center;
-        font-size: 12px;
-        font-weight: 420;
+        font-size: 33px;
+        color:black;
+        letter-spacing: 1px;
+        padding-bottom: 2px;
+    }
+    .e-solid{
+        width: 11rem;
+        margin: auto;
+        color: black;
+        margin-bottom: 10px;
+    }
+    #events p{
+        text-align: justify;
+        font-size: 13px;
+        color: black;
         letter-spacing: .1px;
-        padding: 10px;
+        padding: 13px;
         flex-wrap: wrap;
         line-height: 22px;
         flex-grow: 1;
-        width: 80%;
+        width: 73%;
         margin: auto;
     }
-    .gallery{
-        margin-top: 30px;
-        margin-bottom:30px;
-        width: 650px;
+    .image-slider{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        padding: 10px;
+    }
+    .gallery{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        overflow-x: scroll;
+        border-radius: 10px;
+        border: .1px solid grey;
     }
     .gallery div{
-        width: 80%;
+        width: 100%;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
+        padding: 8px;
         flex: none;
     }
     .gallery div img{
@@ -1863,62 +732,474 @@ footer a{
         transition: 0.5s;
     }
     #angle-gauche, #angle-droite{
-        width: 25px;
-        margin: 5px;
+        width: 33px;
+        margin: 12px;
         margin-top: 5%;
-        font-size: 25px;
+        font-size: 33px;
+        cursor: pointer;
+        color: white;
+        display: none;
     }
-    #contact h4{
-        font-size: 19px;
-        letter-spacing: 1px;
-        font-weight: 450px;
-        padding-bottom: 2px;
+    #contact h3{
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        padding-bottom: 3px;
     }
     .solid-2{
-        width: 9rem;
+        width: 13rem;
+        color: white;
         margin: auto;
         margin-bottom: 2rem;
     }
-    .info{
-        width: 97%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+
+    .footer-row{
+        width: 100%;
         margin: auto;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    .footer-col{
+        align-items: flex-start;
+        text-align: center;
+    }
+    .footer-col h4{
+        font-size: 20px;
+        margin-bottom: 1.4rem;
+        letter-spacing: 1px;
+    }
+    .footer-col ul li, a{
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+    .end{
+        padding: 20px;
+        width: 100%;
+    }
+    .end p{
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        color: white;
+    }
+    .end a{
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: white;
+    }
+    .footer-btn{
+        float: right;
+        bottom: 30px;
+        right: 0;
+        margin-right: 8px;
+        position:fixed;
+    }
+    .footer-btn ion-icon{
+        width: 33px;
+        height: 33px;
+        color: blue;
+    }
+}
+
+@media screen and (max-width:1085px){
+    .image-wrapper{
+        width: 9rem;
+        flex-grow: 1;
+        height: 11rem;
+        margin:3px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:991px){
+    .navbar-collapse{
+        padding-top: 12px;
+        margin-top: 10px;
+        border-top: .1px solid white;
+    }
+    #main-nav .active{
+        background-color: transparent;
+        color: white;
+    }
+    #main-nav ul li a:hover{
+        background-color: transparent;
+    }
+    .youtube-btn{
+        margin-left: 0rem;
+    }
+    /*////////////////////////////////////*/
+    /*//////// Scan qr code /////////////*/
+    .scan{
+        width: 55%;
+        height: 40%;
+        margin: auto;
+        border-bottom: 1px solid lightgrey;
+    }
+    .scan h2{
+        text-align: center;
+        padding-top: 15px;
+        font-size: 25px;
+    }
+    .scan img{
+        width: 100%;
+        height: 420px;
+        margin-bottom: 10px;
+    }
+    .gallery{
+        width: 980px;
+        display: flex;
+        margin-bottom: 2rem;
+        overflow-x: scroll;
+    }
+    .gallery div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 8px;
+        flex: none;
+    }
+    .gallery div img{
+        width: 100%;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width:867px){
+    .row-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:767px){
+    .logo{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    .text-box{
+        flex-grow: 1;
+        flex-wrap: wrap;
+        background-color: rgba(69, 88, 88, 0.445);
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .about-text{
         padding: 10px;
     }
-    .socials-box h3{
-        font-size: 18px;
-        margin-bottom: 20px;
+    .text-box h1{
+        font-size: 60px;
+        letter-spacing: 3px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+        padding-top:20px;
+    }
+    .text-box h2{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        padding-bottom: 23px;
+    }
+
+    #about{
+        width: 100%;
+        padding: 20px 0;
+    }
+    #about h2{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .solid-1{
+        width: 11rem;
+        margin: auto;
+        margin-bottom:1.5rem;
+    }
+    .img-col img{
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 550px;
+    }
+    .about-text{
+        padding: 17px;
+    }
+    .about-btn-2{
+        width: 80%;
+        margin: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    .about-btn-2 .pdf-btn {
+        padding: 14px 24px;
+    }
+    .pdf-btn a{
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .present-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .col-text h2{
+        font-size: 32px;
         padding-top: 10px;
-        letter-spacing: 1.2px;
-        font-weight: 420px;
-        align-items: flex-start;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
     }
-    .socials-box ul a{
-        padding-bottom: 13px;
-    }
-    .socials-box ul a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .socials-box ol li{
-        padding-bottom: 13px;
-    }
-    .socials-box ol li{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .socials-box .last{
-        list-style: none;
-        padding-bottom: 13px;
-    }
-    .socials-box .last li a{
+    .col-text p{
         font-size: 12px;
         letter-spacing: 1px;
-        font-weight: 400px;
+        line-height: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .radio-btn{
+        width: 10rem;
+        padding: 10px 10px;
+        margin-bottom: 2.3rem;
+        display: flex;
+        align-items: center;
+    }
+    .col-text{
+        margin-bottom: 2rem;
+    }
+    .image-wrapper{
+        width: 11rem;
+        flex-grow: 1;
+        height: 12rem;
+        margin:4px;
+    }
+    /*////////////////////////////////////*/
+    /*//////// Scan qr code /////////////*/
+    .scan{
+        width: 70%;
+        height: 40%;
+        margin: auto;
+        border-bottom: 1px solid lightgrey;
+    }
+    .scan h2{
+        text-align: center;
+        padding-top: 15px;
+        font-size: 21px;
+    }
+    .scan img{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 8px;
+    }
+    #events h2{
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding-bottom: 2px;
+    }
+    .e-solid{
+        width: 10rem;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #events p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        padding: 10px;
+        line-height: 21px;
+        flex-grow: 1;
+        width: 75%;
+        margin: auto;
+    }
+    .gallery{
+        width: 960px;
+        display: flex;
+        margin-bottom: 2rem;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .logo{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    #main-nav ul li a{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .text-box{
+        flex-grow: 1;
+        padding: 10px;
+    }
+    .about-text{
+        padding: 10px;
+    }
+    .text-box h1{
+        font-size: 50px;
+        letter-spacing: 2px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+        padding-top:20px;
+    }
+    .text-box h2{
+        font-size: 15px;
+        letter-spacing: 1.3px;
+        padding-bottom: 20px;
+    }
+    #about h2{
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+    .solid-1{
+        width: 10rem;
+        margin: auto;
+        margin-bottom:1.3rem;
+    }
+    .img-col img{
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 500px;
+    }
+    .about-text{
+        padding: 15px;
+    }
+    .about-text h1{
+        font-size: 21px;
+        letter-spacing: 1.3px;
+        padding-top: 15px;
+    }
+    .solid{
+        width: 12rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-text p{
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 21px;
+    }
+
+    .col-text h2{
+        font-size: 25px;
+        padding-top: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+    .col-text p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        line-height: 20px;
+        margin-bottom: 1.5rem;
+    }
+    .bio h3{
+        font-size: 20px;
+        letter-spacing: 1.3px;
+    }
+    .radio-btn{
+        width: 10rem;
+        padding: 10px 10px;
+        margin-bottom: 2.3rem;
+        display: flex;
+        align-items: center;
+    }
+    .image-wrapper{
+        width: 10rem;
+        flex-grow: 1;
+        height: 13rem;
+        margin:2px;
+    }
+    /*////////////////////////////////////*/
+    /*//////// Scan qr code /////////////*/
+    .scan{
+        width: 85%;
+        height: 40%;
+        margin: auto;
+    }
+    .scan h2{
+        text-align: center;
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    .scan img{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 8px;
+    }
+    #events h2{
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding-bottom: 1px;
+    }
+    .e-solid{
+        width: 9rem;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #events p{
+        font-size: 12px;
+        letter-spacing: .1px;
+        padding: 10px;
+        line-height: 20px;
+        flex-grow: 1;
+        width: 77%;
+        margin: auto;
+    }
+    .image-slider{
+        padding: 8px;
+    }
+    .gallery{
+        width: 970px;
+        display: flex;
+        margin-bottom: 1.5rem;
+        overflow-x: scroll;
+    }
+    .gallery div{
+        grid-gap: 8px;
+        padding: 8px;
+    }
+    .gallery div img{
+        height: 190px;
+        width: 100%;
+    }
+
+    #contact{
+        width:100%;
+        padding: 20px 10px;
+        background-image:linear-gradient(to top, #000000, transparent),
+        url(images/footer.jpg);
+    }
+    #contact h3{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        padding-bottom: 3px;
+    }
+    .solid-2{
+        width: 11rem;
+        margin-bottom: 2rem;
+    }
+    .footer-col h4{
+        font-size: 20px;
+        margin-bottom: 1.4rem;
+        letter-spacing: 1.5px;
+    }
+    .footer-col ul li, a{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 520px;
+        padding-bottom: 10px;
+    }
+    .end{
+        padding: 20px;
+        width: 100%;
+    }
+    .end p{
+        font-size: 13px;
+        letter-spacing: 1.3px;
+    }
+    .end a{
+        font-size: 16px;
+        letter-spacing: 1.3px;
+    }
+    .footer-btn{
+        float: right;
+        bottom: 25px;
+        right: 0;
+        margin-right: 7px;
     }
     .footer-btn ion-icon{
         width: 30px;
@@ -1926,1699 +1207,313 @@ footer a{
     }
 }
 
-@media screen and (max-width:721px){
-     /*.sidebar{
-        width: 47%;
-        height: 85dvh;
-        left: -40rem;   
-    }
+@media screen and (max-width:452px){
     .banner{
         width: 100%;
-        height: 85dvh;
+        min-height: 95dvh;    
     }
-    .outer{
-        width: 100%;
-        height: 85dvh;
-    }*/
+    .menu-btn{
+        font-size: 13px;
+    }
+    .text-box{
+        flex-grow: 1;
+        padding: 10px;
+    }
+    .about-text{
+        padding: 10px;
+    }
     .text-box h1{
-        font-size: 50px;
-        letter-spacing: 6px;
-        font-weight: 620;
-        line-height: 1.2;
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 1.1;
         margin-bottom: 13px;
         padding-top:20px;
     }
     .text-box h2{
-        font-size: 20px;
-        letter-spacing: 2px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    .about-text h1{
-        font-size: 22px;
-        letter-spacing: 2px;
-        padding-top: 15px;
-        font-weight: 450;
-        padding-bottom: 3px;
-    }
-    .solid{
-        width: 13rem;
-        margin: auto;
-        margin-bottom: 1.4rem;
-    }
-    .about-text p{
-        font-size: 12px;
-        letter-spacing: 1px;
-        line-height: 26px;
-        font-weight: 400;
-    }
-    .container-text{
-        width: 90%;
-        flex-grow: 1;
-        margin-bottom: 1.5rem;
-        padding: 10px;
-    }
-    .container-text h2{
-        font-size: 33px;
-        letter-spacing: 2px;
-        font-weight: 500;
-        margin-bottom: 15px;
-    }
-    .container-text p{
         font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 400px;
-        line-height: 23px;
-        margin-bottom: 1.5rem;
-    }
-    .radio-btn{
-        width: 11rem;
-        text-align: center;
-        margin: auto;
-        padding: 12px 13px;
-        outline: none;
-        align-items: baseline;
-        border: 1px solid white;
-        margin-bottom: 1.7rem;
-        margin-top: 1.7rem;
-        background-color:transparent;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        border-radius: 5px;
-    }
-    .radio-btn ion-icon{
-        width: 30px;
-        height: 20px;
-    }
-    .radio-btn a{
-        font-size: 15px;
-        letter-spacing: 1px;
-        font-weight: 650px;
-        
-        text-decoration: none;
-    }
-    .bio h3{
-        font-size: 23px;
-        letter-spacing: 4px;
-        font-weight: 520;
-        margin-bottom: 15px;
-    }
-    #events p{
-        text-align: center;
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: .1px;
-        padding: 8px;
-        flex-wrap: wrap;
-        line-height: 20px;
-        flex-grow: 1;
-        width: 83%;
-        margin-bottom: 10px;
-        margin: auto;
-    }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 600px;
-        display: flex;
-    }
-    .gallery div{
-        width: 80%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 5px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    /*/////////////////////////*/
-    #contact h4{
-        font-size: 20px;
-        letter-spacing: 1px;
-        font-weight: 500px;
-        padding-bottom: 3px;
-    }
-    .solid-2{
-        width: 10rem;
-        margin: auto;
-        margin-bottom: 1.5rem;
-    }
-    .info{
-        width: 97%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-        padding: 10px;
-    }
-    .socials-box h3{
-        font-size: 18px;
         letter-spacing: 1.3px;
-        font-weight: 520;
-    }
-    .socials-box ul a{
-        padding-bottom: 12px;
-    }
-    .socials-box ul a{
-        font-size: 12px;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .socials-box ol li{
-        padding-bottom: 12px;
-    }
-    .socials-box ol li{
-        font-size: 12px;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .socials-box .last{
-        list-style: none;
-        padding-bottom: 12px;
-    }
-    .socials-box .last li a{
-        font-size: 12px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-    }
-    footer p{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        padding-bottom: 7px;
-    }
-    footer a{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        padding-bottom: 10px;
-    }
-    .footer-btn ion-icon{
-        width: 30px;
-        height: 30px;
-    }
-}
-@media screen and (max-width:671px){
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 550px;
-        display: flex;
-    }
-    .gallery div{
-        width: 80%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 5px;
-        padding: 5px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-}
-@media screen and (max-width:630px) {
-    .sidebar{
-        width: 55%;
-        height: 80dvh;
-        left: -40rem;   
-    }
-    .sidebar h4{
-        font-size: 20px;
-        padding-top: 25px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.4rem;
-        list-style: none;
-    }
-    .menu-tab li a{
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-weight: 420;
-    }
-    .menu-tab li a:hover::before{
-	    width: 1.7rem;
-    }
-    .menu-tab li a:hover::after{
-        width: 1.7rem;
-    }
-    .sidebar p{
-        font-size: 16px;
-        font-weight: 500px;
-        letter-spacing: 1.3px;
-        padding-top: 25px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-    }
-    .menu-btn ion-icon{
-        width: 30px;
-        height: 30px;
-    }
-    .banner{
-        width: 100%;
-        height: 80dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 80dvh;
-    }
-    .text-box h1{
-        font-size: 45px;
-        letter-spacing: 5px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-bottom: 13px;
-        padding-top:18px;
-    }
-    .text-box h2{
-        font-size: 17px;
-        letter-spacing: 3px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    .about-img{
-        width: 60%;
-        height: 300px;
-        margin-bottom: 1.3rem;
-    }
-    .about-text h1{
-        font-size: 21px;
-        letter-spacing: 1.3px;
-        padding-top: 15px;
-        font-weight: 420;
-        padding-bottom: 3px;
-    }
-    .solid{
-        width: 12rem;
-        margin: auto;
-        margin-bottom: 1.3rem;
-    }
-    .about-text p{
-        font-size: 12px;
-        letter-spacing: .1px;
-        line-height: 25px;
-        font-weight: 400;
-    }
-    .container-text{
-        width: 95%;
-        flex-grow: 1;
-        margin-bottom: 1.5rem;
-        padding: 10px;
-    }
-    .container-text h2{
-        font-size: 30px;
-        letter-spacing: 1.7px;
-        font-weight: 500;
-        margin-bottom: 13px;
-    }
-    .container-text p{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 400px;
-        line-height: 23px;
-        margin-bottom: 1.3rem;
-    }
-    .radio-btn{
-        width: 10rem;
-        margin: auto;
-        padding: 12px 13px;
-        margin-bottom: 1.7rem;
-        margin-top: 1.7rem;
-        border-radius: 5px;
-    }
-    .radio-btn ion-icon{
-        width: 25px;
-        height: 18px;
-    }
-    .radio-btn a{
-        font-size: 14px;
-        letter-spacing: 1px;
-        font-weight: 600px;
-    }
-    .bio h3{
-        font-size: 24px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        margin-bottom: 15px;
-    }
-    .display{
-        max-width: 35rem;
-    }
-    .image-wrapper{
-        width: 9rem;
-        flex-grow: 1;
-        height: 12rem;
-        margin:4px;
-    }
-    #events p{
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: .1px;
-        padding: 10px;
-        line-height: 19px;
-        flex-grow: 1;
-        width: 83%;
-        margin: auto;
-    }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 500px;
-        display: flex;
-    }
-    .gallery div{
-        width: 80%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 5px;
-        padding: 10px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex: none;
-    }
-    #contact h4{
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        padding-bottom: 2px;
-    }
-    .solid-2{
-        width: 8rem;
-        margin: auto;
-        margin-bottom: 1.5rem;
-    }
-}
-@media screen and (max-width:571px){
-    .sidebar{
-        width: 55%;
-        height: 77dvh;
-        left: -37rem;   
-    }
-    .sidebar h4{
-        font-size: 20px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        padding-top: 25px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3rem;
-    }
-    .menu-tab li a{
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 16px;
-        font-weight: 500px;
-        letter-spacing: 1.3px;
-        padding-top: 25px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 3.5rem;
-    }
-    .banner{
-        width: 100%;
-        height: 77dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 77dvh;
-    }
-    .text-box{
-        width: 96%;
-        margin: auto;
-    }
-    .text-box h1{
-        font-size: 40px;
-        letter-spacing: 4px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-bottom: 13px;
-        padding-top:18px;
-    }
-    .text-box h2{
-        font-size: 16px;
-        letter-spacing: 2px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    .about-box{
-        padding: 10px;
-        margin-bottom: 3rem;
+        padding-bottom: 20px;
     }
     #about h2{
-        font-size: 23px;
+        font-size: 25px;
         letter-spacing: 1px;
-        font-weight: 520px;
-        padding-bottom: 2px;
     }
-    .solid-3{
+    .solid-1{
         width: 9rem;
         margin: auto;
-        margin-bottom:1rem;
+        margin-bottom:1.3rem;
+    }
+    .img-col img{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        height: 450px;
+    }
+    .about-text{
+        padding: 13px;
+    }
+    .about-text h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding-top: 15px;
+    }
+    .solid{
+        width: 11rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-text p{
+        font-size: 11px;
+        letter-spacing: .1px;
+        line-height: 20px;
     }
     .about-btn-2{
-        width: 60%;
+        width: 77%;
         margin: auto;
-        padding-top: 1.7rem;
+        padding-top: 1.3rem;
         padding-bottom: 1.5rem;
     }
-    .about-text h1{
-        font-size:19px;
-        letter-spacing: 1.5px;
-        padding-top: 12px;
-        font-weight: 500;
-        padding-bottom: 3px;
-    }
-    .solid{
-        width: 12rem;
-        margin: auto;
-        margin-bottom: 1.3rem;
-    }
     .about-btn-2 .pdf-btn {
-        padding: 10px 20px;
-        border-radius: 8px;
+        padding: 12px 24px;
     }
     .pdf-btn a{
-        font-weight: 650;
-        letter-spacing: 1px;
-        font-size: 11px;
-    }
-    .container-text{
-        width: 97%;
-        flex-grow: 1;
-        margin-bottom: 1.5rem;
-        padding: 8px;
-    }
-    .container-text h2{
-        font-size: 24px;
-        letter-spacing: 1px;
-        font-weight: 500;
-        margin-bottom: 12px;
-    }
-    .container-text p{
-        font-size: 11px;
         letter-spacing: .1px;
-        font-weight: 400px;
-        line-height: 19px;
-        margin-bottom: 1.3rem;
-    }
-    .radio-btn{
-        width: 9rem;
-        margin: auto;
-        padding: 10px 10px;
-        margin-bottom: 1.7rem;
-        margin-top: 1.7rem;
-        border-radius: 5px;
-    }
-    .radio-btn ion-icon{
-        width: 23px;
-        height: 16px;
-    }
-    .radio-btn a{
         font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 550px;
     }
-    .bio h3{
-        font-size: 20px;
-        letter-spacing: 2px;
-        font-weight: 420;
+
+    .col-text{
+        padding: 12px;
+        align-items: flex-start;
+    }
+    .col-text h2{
+        font-size: 23px;
+        padding-top: 10px;
+        letter-spacing: 1px;
         margin-bottom: 15px;
     }
-    .display{
-        max-width: 33rem;
-    }
-    .image-wrapper{
-        width: 8rem;
-        flex-grow: 1;
-        height: 12rem;
-        margin:3px;
-    }
-    #events p{
-        font-size: 10px;
-        font-weight: 400;
+    .col-text p{
+        font-size: 11px;
         letter-spacing: .1px;
-        padding: 7px;
-        line-height: 15px;
-        flex-grow: 1;
-        width: 87%;
-        margin: auto;
+        line-height: 18px;
+        text-align: justify;
+        margin-bottom: 1.5rem;
     }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 450px;
-        display: flex;
-    }
-    #contact{
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 1rem;
-    }
-    #contact h4{
+    .bio h3{
         font-size: 18px;
         letter-spacing: 1px;
-        font-weight: 400px;
-        padding-bottom: 2px;
     }
-    .solid-2{
-        width: 9rem;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    .info{
-        width: 97%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin: auto;
-        padding: 10px;
-    }
-    .socials-box h3{
-        font-size: 16px;
-        letter-spacing: 1.3px;
-    }
-    .socials-box ul a{
-        padding-bottom: 14px,
-    }
-    .socials-box ul a{
-        font-size: 13px;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .socials-box ol li{
-        padding-bottom: 13px;
-    }
-    .socials-box ol li{
-        font-size: 13px;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .socials-box .last{
-        list-style: none;
-        padding-bottom: 13px;
-    }
-    .socials-box .last li a{
-        font-size: 13px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-    }
-}
-@media screen and (max-width:533px){
-    .text-box h1{
-        font-size: 40px;
-        letter-spacing: 4px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-bottom: 13px;
-        padding-top:18px;
-    }
-    .text-box h2{
-        font-size: 19px;
-        letter-spacing: 1.5px;
-        font-weight: 420;
-        padding-bottom: 10px;
-    }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 400px;
-        display: flex;
-    }
-    #contact h4{
-        font-size: 17px;
-        letter-spacing: 1px;
-        font-weight: 400px;
-        padding-bottom: 2px;
-    }
-    .solid-2{
-        width: 8rem;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    .bio a{
-        font-size: 12px;
-        color: yellow;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-}
-@media screen and (max-width:515px){
-    .sidebar{
-        height: 75dvh;
-    }
-    .sidebar h4{
-        font-size: 19px;
-        letter-spacing: 1.5px;
-        font-weight: 500;
-        padding-top: 20px;
+    .radio-btn{
+        width: 10rem;
+        padding: 9px 10px;
         margin-bottom: 2rem;
     }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3.3rem;
-    }
-    .menu-tab li a{
-        font-size: 14px;
-        letter-spacing: 1.5px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 16px;
-        font-weight: 420px;
-        letter-spacing: 1px;
+    #events{
         padding-top: 20px;
-    }
-    .banner{
         width: 100%;
-        height: 75dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 75dvh;
     }
     #events h2{
         font-size: 23px;
         letter-spacing: 1px;
-        font-weight: 500px;
-        padding-top: 7px;
-        padding-bottom: 2px;
-    }
-    .e-solid{
-        width: 7rem;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    #events p{
-        font-size: 10px;
-        font-weight: 400;
-        letter-spacing: .1px;
-        padding: 5px;
-        line-height: 15px;
-        flex-grow: 1;
-        width: 87%;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 400px;
-        display: flex;
-    }
-    #contact h4{
-        font-size:17px;
-        letter-spacing: 1px;
-        font-weight: 400px;
-        padding-bottom: 2px;
-    }
-    .solid-2{
-        width: 8rem;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    .info{
-        width: 97%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        flex-direction: column;
-        flex-grow: 1;
-        border-radius: 5px;
-        margin: auto;
-        padding: 5px;
-    }
-}
-@media screen and (max-width:480px){
-    .sidebar{
-        width: 57%;
-        height: 75dvh;
-        left: -37rem;   
-    }
-    .sidebar h4{
-        font-size: 20px;
-        letter-spacing: 1.5px;
-        font-weight: 500;
-        padding-top: 20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 3rem;
-    }
-    .menu-tab li a{
-        font-size: 14px;
-        letter-spacing: 1.5px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 15px;
-        font-weight: 400px;
-        letter-spacing: 1px;
-        padding-top: 20px;
-    }
-    .menu-btn{
-        margin-bottom: 140px;
-        margin-left: 5px;
-        padding-top: 7px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 3rem;
-    }
-    .banner{
-        width: 100%;
-        height: 75dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 75dvh;
-    }
-    .text-box{
-        width:97%;
-    }
-    .text-box h1{
-        font-size: 37px;
-        letter-spacing: 3px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-bottom: 11px;
-        padding-top:16px;
-    }
-    .text-box h2{
-        font-size: 18px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-}
-@media screen and (max-width:469px){
-    .sidebar{
-        width: 57%;
-        height: 75dvh;
-        left: -37rem;   
-    }
-    .sidebar h4{
-        font-size: 20px;
-        letter-spacing: 1.5px;
-        font-weight: 500;
-        padding-top: 20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.7rem;
-    }
-    .menu-tab li a{
-        font-size: 14px;
-        letter-spacing: 1.5px;
-        font-weight: 420;
-    }
-    .sidebar p{
-        font-size: 14px;
-        font-weight: 400px;
-        letter-spacing: 1.5px;
-        padding-top: 25px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-        margin-left: 5px;
-        padding-top: 7px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 3rem;
-    }
-    .banner{
-        width: 100%;
-        height: 75dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 75dvh;
-    }
-    .text-box{
-        width:97%;
-    }
-    .text-box h1{
-        font-size: 37px;
-        letter-spacing: 3px;
-        font-weight: 520;
-        line-height: 1.2;
-        margin-bottom: 11px;
-        padding-top:16px;
-    }
-    .text-box h2{
-        font-size: 17px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    .solid-3{
-        width: 8rem;
-        margin: auto;
-        margin-bottom:1rem;
-    }
-    #angle-gauche,
-    #angle-droite{
-        display: none;
-    }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 400px;
-        display: flex;
-    }
-}
-@media screen and (max-width:425px){
-    .sidebar{
-        width: 60%;
-        height:70dvh;
-        left: -35rem;     
-    }
-    .sidebar h4{
-        font-size: 18px;
-        padding-top: 20px;
-        letter-spacing: 1px;
-        font-weight: 450;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.7rem;
-    }
-    .menu-tab li a{
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 13px;
-        font-weight: 400px;
-        letter-spacing: 1.1px;
-        padding-top: 20px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-        margin-left: 5px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 23px;
-        height: 23px;
-        padding: 5px 5px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 2.5rem;
-    }
-    .banner{
-        width: 100%;
-        height: 70dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 70dvh;
-    }
-    .text-box h1{
-        font-size: 35px;
-        letter-spacing: 3px;
-        font-weight: 550;
-        line-height: 1.1;
-        margin-bottom: 10px;
-        padding-top:14px;
-    }
-    .text-box h2{
-        font-size: 16px;
-        letter-spacing: 1.7px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    #about h2{
-        font-size: 19px;
-        letter-spacing: .1px;
-        font-weight: 520px;
-        padding-bottom: 2px;
-    }
-    .solid-3{
-        width: 8rem;
-        margin: auto;
-        margin-bottom:1rem;
-    }
-    .about-box{
-        padding: 7px;
-        margin-bottom: 3rem;
-    }
-    .about-img{
-        width: 63%;
-        height: 250px;
-        margin-bottom: 1.3rem;
-    }
-    .about-text{
-        width: 100%;
-        padding: 8px;
-    }
-    .about-text h1{
-        font-size: 17px;
-        letter-spacing: 1.3px;
-        padding-top: 10px;
-        font-weight: 420;
-        padding-bottom: 3px;
-    }
-    .solid{
-        width: 10rem;
-        margin: auto;
-        margin-bottom: 1.1rem;
-    }
-    .about-text p{
-        font-size: 10px;
-        letter-spacing: 0;
-        line-height: 20px;
-        font-weight: 400;
-    }
-    .about-btn-2 .pdf-btn {
-        padding: 8px 15px;
-        border-radius: 8px;
-    }
-    .pdf-btn a{
-        font-weight: 600;
-        letter-spacing: 1px;
-        font-size: 11px;
-    }
-    .container-text{
-        width: 100%;
-        flex-grow: 1;
-        margin-bottom: 1.5rem;
-        padding: 8px;
-    }
-    .container-text h2{
-        font-size: 25px;
-        letter-spacing: 1.3px;
-        font-weight: 500;
-        margin-bottom: 12px;
-    }
-    .container-text p{
-        font-size: 10px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-        line-height: 17px;
-        margin-bottom: 1.3rem;
-    }
-    .radio-btn{
-        width: 8rem;
-        margin: auto;
-        padding: 10px 8px;
-        margin-bottom: 1.7rem;
-        margin-top: 1.7rem;
-        border-radius: 5px;
-    }
-    .radio-btn ion-icon{
-        width: 23px;
-        height: 16px;
-    }
-    .radio-btn a{
-        font-size: 11px;
-        letter-spacing: 1px;
-        font-weight: 520px;
-    }
-    .bio h3{
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-weight: 420;
-        margin-bottom: 13px;
-    }
-    .bio a{
-        font-size: 10px;
-        color: yellow;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .display{
-        max-width: 31rem;
-    }
-    .image-wrapper{
-        width: 7rem;
-        flex-grow: 1;
-        height: 9rem;
-        margin:3px;
-    }
-    #events h2{
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        padding-bottom: 2px;
-    }
-    .e-solid{
-        width: 6rem;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    #events p{
-        font-size: 10px;
-        font-weight: 400;
-        letter-spacing: 0;
-        padding: 5px;
-        line-height: 16px;
-        flex-grow: 1;
-        width: 85%;
-        margin: auto;
-    }
-    .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 350px;
-        display: flex;
-    }
-    .gallery div{
-        width:100%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 5px;
-        padding: 5px;
-        flex: none;
-    }
-    #angle-gauche,
-    #angle-droite{
-        display: none;
-    }
-    #contact{
-        width: 100%;
-        padding-top: 13px;
-        padding-bottom: 5px;
-    }
-    #contact h4{
-        font-size: 15px;
-        letter-spacing: 1px;
-        font-weight: 420px;
-        padding-bottom: 2px;
-    }
-    .solid-2{
-        width: 7rem;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-    .socials-box h3{
-        font-size: 16px;
-        letter-spacing: 1.2px;
-    }
-    .socials-box ol li{
-        padding-bottom: 11px;
-    }
-    footer{
-        width: 100%;
-        padding-top: 18px;
-        padding-bottom: 11px;;
-    }
-    .footer-btn{
-        float: right;
-        bottom: 20px;
-        right: 0;
-        margin-right: 10px;
-    }
-}
-@media screen and (max-width:414px) /*and (min-width:896px)*/{
-    .sidebar{
-        width: 58%;
-        max-height: 70dvh;
-        left: -35rem;   
-    }
-    .sidebar h4{
-        font-size: 17px;
-        letter-spacing: 2px;
-        font-weight: 420;
-        padding-top:20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.6rem;
-    }
-    .menu-tab li a{
-        font-size: 12px;
-        letter-spacing: 1p.2x;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 14px;
-        font-weight: 400px;
-        letter-spacing: 1.5px;
-        padding-top: 20px;
-    }
-    .menu-btn{
-        margin-bottom: 140px;
-        margin-left: 3px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 23px;
-        height: 23px;
-        padding: 5px 5px;
-    }
-    .banner{
-        width: 100%;
-        max-height: 70dvh;
-    }
-    .outer{
-        width: 100%;
-        max-height: 70dvh;
-    }
-}
-@media screen and (max-width:412px) /*and (max-width:915px)*/{
-    .sidebar{
-        width: 58%;
-        max-height: 70dvh;
-        left: -35rem;   
-    }
-    .sidebar h4{
-        font-size: 17px;
-        letter-spacing: 2px;
-        font-weight: 420;
-        padding-top:20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.7rem;
-    }
-    .menu-tab li a{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 12px;
-        font-weight: 400px;
-        letter-spacing: 1.3px;
-        padding-top: 20px;
-    }
-    .menu-btn{
-        margin-bottom: 140px;
-        margin-left: 3px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 23px;
-        height: 23px;
-        padding: 5px 5px;
-    }
-    .banner{
-        width: 100%;
-        max-height: 70dvh;
-    }
-    .outer{
-        width: 100%;
-        max-height: 70dvh;
-    }
-}
-@media screen and (max-width:375px){
-    .sidebar{
-        width: 58%;
-        height: 70dvh;
-        left: -35rem;   
-    }
-    .banner{
-        width: 100%;
-        height: 70dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 70dvh;
-    }
-}
-@media screen and (max-width:369px){
-    .sidebar{
-        width: 58%;
-        height: 65dvh;
-        left: -35rem;   
-    }
-    .sidebar h4{
-        font-size: 17px;
-        letter-spacing: 2px;
-        font-weight: 420;
-        padding-top:20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.3rem;
-    }
-    .menu-tab li a{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 12px;
-        font-weight: 400px;
-        letter-spacing: 1px;
-        padding-top: 20px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-        margin-left: 3px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 23px;
-        height: 23px;
-        padding: 5px 5px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 2.5rem;
-    }
-    .banner{
-        width: 100%;
-        height: 65dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 65dvh;
-    }
-    .text-box h1{
-        font-size: 30px;
-        letter-spacing: 2px;
-        font-weight: 520;
-        line-height: 1.1;
-        margin-bottom: 11px;
-        padding-top:15px;
-    }
-    .text-box h2{
-        font-size: 14px;
-        letter-spacing: 1px;
-        font-weight: 400;
-        padding-bottom: 10px;
-    }
-    #about h2{
-        font-size: 16px;
-        letter-spacing: .1px;
-        font-weight: 500px;
-        padding-bottom: 2px;
-    }
-    .solid-3{
-        width: 6rem;
-        margin: auto;
-        margin-bottom:1rem;
-    }
-    .about-box{
-        padding: 5px;
-        margin-bottom: 3rem;
-    }
-    .about-img{
-        width: 63%;
-        height: 250px;
-        margin-top: 10px;
-        margin-bottom: 1.3rem;
-    }
-    .about-text h1{
-        font-size: 15px;
-        letter-spacing: 1.3px;
-        padding-top: 10px;
-        font-weight: 400;
-        padding-bottom: 3px;
-    }
-    .solid{
-        width: 9rem;
-        margin: auto;
-        margin-bottom: 1.1rem;
-    }
-    .about-text{
-        width: 100%;
-        padding: 7px;
-    }
-    .about-text p{
-        font-size:9px;
-        letter-spacing: 0;
-        line-height: 19px;
-        font-weight: 400;
-    }
-    .about-btn-2 .pdf-btn {
-        padding: 8px 10px;
-        width: 13rem;
-        border-radius: 8px;
-    }
-    .pdf-btn a{
-        font-weight: 520;
-        letter-spacing: .1px;
-        font-size: 10px;
-    }
-    .image-wrapper{
-        width: 6rem;
-        flex-grow: 1;
-        height: 8rem;
-        margin:3px;
-    }
-    .container-text{
-        width: 100%;
-        flex-grow: 1;
-        margin-bottom: 1.5rem;
-        padding: 6px;
-    }
-    .container-text h2{
-        font-size: 18px;
-        letter-spacing: 1.1px;
-        font-weight: 500;
-        margin-bottom: 12px;
-    }
-    .container-text p{
-        font-size: 10px;
-        letter-spacing: 0;
-        font-weight: 400px;
-        line-height: 17px;
-        margin-bottom: 1.2rem;
-    }
-    #events h2{
-        text-align: center;
-        font-size: 18px;
-        letter-spacing: .1px;
-        font-weight: 420px;
         padding-bottom: 1px;
     }
     .e-solid{
-        width: 5rem;
+        width: 8rem;
         margin: auto;
         margin-bottom: 10px;
     }
     #events p{
-        font-size: 9px;
-        font-weight: 400;
-        letter-spacing: 0;
-        padding: 2px;
-        line-height: 15px;
+        font-size: 11px;
+        letter-spacing: .1px;
+        padding: 10px;
+        line-height: 20px;
         flex-grow: 1;
-        width: 88%;
+        width: 83%;
         margin: auto;
-        margin-bottom: 10px;
+    }
+    .image-slider{
+        padding: 5px;
     }
     .gallery{
-        margin-top: 20px;
-        margin-bottom:20px;
-        width: 300px;
+        width: 1000px;
         display: flex;
+        margin-bottom: 1.5rem;
+        padding-bottom: 10px;
+        overflow-x: scroll;
     }
-    #contact h4{
-        font-size: 14px;
+    .gallery div{
+        grid-gap: 3px;
+        padding: 3px;
+        grid-template-columns: auto auto auto auto;
+    }
+    .gallery div img{
+        height: 150px;
+        width: 100%;
+    }
+    #contact h3{
+        font-size: 18px;
         letter-spacing: 1px;
-        font-weight: 550px;
-        padding-bottom: 2px;
+        padding-bottom: 1px;
     }
     .solid-2{
-        width: 7rem;
-        margin: auto;
-        margin-bottom: 13px;
+        width: 9rem;
+        margin-bottom: 1rem;
     }
-    .socials-box h3{
-        margin-bottom: 13px;
-        font-size: 14px;
-    }
-    .socials-box ul a{
-        padding-bottom: 12px;
-    }
-    .socials-box ul a{
-        font-size: 11px;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .socials-box ol li{
-        padding-bottom: 10px;
-    }
-    .socials-box ol li{
-        font-size: 11px;
-        letter-spacing: .1px;
-        font-weight: 400;
-    }
-    .socials-box .last{
-        list-style: none;
-        padding-bottom: 10px;
-    }
-    .socials-box .last li a{
-        font-size: 11px;
-        letter-spacing: .1px;
-        font-weight: 400px;
-    }
-    footer p{
-        font-size: 11px;
+    .footer-col h4{
+        font-size: 18px;
+        margin-bottom: 1.4rem;
         letter-spacing: 1px;
-        font-weight: 500px;
-        padding-bottom: 7px;
     }
-    footer a{
-        font-size: 11px;
+    .footer-col ul li, a{
+        font-size: 13px;
         letter-spacing: 1px;
-        font-weight: 500px;
         padding-bottom: 10px;
+    }
+    .end{
+        padding: 18px;
+    }
+    .end p{
+        font-size: 11px;
+        letter-spacing: .1px;
+    }
+    .end a{
+        font-size: 12px;
+        letter-spacing: 1px;
     }
     .footer-btn{
+        float: right;
+        bottom: 25px;
+        right: 0;
+        margin-right: 1px;
+    }
+    .end p{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .end a{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .footer-btn{
+        float: right;
+        bottom: 25px;
+        right: 0;
         margin-right: 5px;
     }
     .footer-btn ion-icon{
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 }
-@media screen and (max-width:360px) /*and (max-width:640px)*/{
-    .sidebar{
-        width: 60%;
-        height: 65vh;
-        left: -35rem;   
-    }
-    .sidebar h4{
-        font-size: 15px;
-        letter-spacing: 1px;
-        font-weight: 420;
-        padding-top: 20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.3rem;
-    }
-    .menu-tab li a{
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 11px;
-        font-weight: 520px;
-        letter-spacing: 1.5px;
-        padding-top: 20px;
-    }
-    .menu-btn{
-        margin-bottom: 130px;
-        margin-left: 2px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 21px;
-        height: 21px;
-        padding: 5px 5px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 2.4rem;
-    }
-    .banner{
-        width: 100%;
-        height: 65dvh;
-    }
-    .outer{
-        width: 100%;
-        height: 65dvh;
-    }
-}
-@media screen and (max-width:340px){
-    .sidebar{
-        width: 60%;
-        height: 60vh;
-        left: -35rem;   
-    }
-    .sidebar h4{
-        font-size: 16px;
-        letter-spacing: 1px;
-        font-weight: 400;
-        padding-top: 20px;
-        margin-bottom: 2rem;
-    }
-    .menu-tab{
-        margin-bottom: 1rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2.3rem;
-    }
-    .menu-tab li a{
-        font-size: 11px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 11px;
-        font-weight: 400px;
-        letter-spacing: 1px;
-        padding-top: 18px;
-    }
-    .menu-btn{
-        margin-bottom: 100px;
-        margin-left: 2px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 21px;
-        height: 21px;
-        padding: 5px 5px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 2.4rem;
-    }
-    .banner{
-        width: 100%;
-        height: 60vh;
-    }
-    .outer{
-        width: 100%;
-        height: 60vh;
-    }
-}
-@media screen and (max-width:320px){
-    .sidebar{
-        width: 60%;
-        height: 60vh;
-        left: -35rem;   
-    }
-    .sidebar h4{
-        font-size: 16px;
-        letter-spacing: 2px;
-        font-weight: 400;
-        padding-top: 20px;
-        margin-bottom: 2.5rem;
-    }
-    .menu-tab{
-        margin-bottom: 2rem;
-    }
-    .menu-tab li{
-        padding-bottom: 2rem;
-    }
-    .menu-tab li a{
-        font-size: 11px;
-        letter-spacing: 1px;
-        font-weight: 400;
-    }
-    .sidebar p{
-        font-size: 11px;
-        font-weight: 400px;
-        letter-spacing: 1px;
-        padding-top: 18px;
-    }
-    .menu-btn{
-        margin-bottom: 100px;
-        margin-left: 2px;
-        padding-top: 7px;
-    }
-    .menu-btn ion-icon{
-        width: 21px;
-        height: 21px;
-        padding: 5px 5px;
-    }
-    .checkbox:checked ~ .sidebar{
-        left: 2.4rem;
-    }
-    .banner{
-        width: 100%;
-        height: 60vh;
-    }
-    .outer{
-        width: 100%;
-        height: 60vh;
-    }
+
+@media screen and (max-width:375px) {
     .text-box h1{
-        font-size: 27px;
-        letter-spacing: 2.3px;
-        font-weight: 500;
-        line-height: 1;
-        margin-bottom: 10px;
-        padding-top:13px;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        line-height: 1.1;
+        margin-bottom: 12px;
+        padding-top:20px;
     }
     .text-box h2{
         font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 400;
-        padding-bottom: 10px;
+        letter-spacing: 1.3px;
+        padding-bottom: 20px;
     }
-    .about-box{
-        padding: 5px;
-        margin-bottom: 3rem;
-    }
-    .about-img{
-        width: 67%;
-        height: 260px;
-        margin-top: 10px;
-        margin-bottom: 1.3rem;
-    }
-    .about-text h1{
-        font-size: 13px;
-        letter-spacing: 1px;
-        padding-top: 12px;
-        font-weight: 420;
-        padding-bottom: 3px;
-    }
-    .solid{
-        width: 8rem;
-        margin: auto;
-        margin-bottom: 15px;
+    .img-col img{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        height: 350px;
     }
     .about-text{
-        width: 100%;
-        padding: 6px;
+        padding: 12px;
     }
-    .about-text p{
-        font-size:9px;
-        letter-spacing: 0;
-        line-height: 20px;
-        font-weight: 400;
+    .about-text h1{
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding-top: 15px;
     }
-    .about-btn-2 a{
-        font-size: 10px;
+    .solid{
+        width: 10rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-btn-2{
+        width: 74%;
+        margin: auto;
+        padding-top: 1.3rem;
+        padding-bottom: 1.5rem;
     }
     .about-btn-2 .pdf-btn {
-        padding: 8px 10px;
-        width: 12rem;
-        border-radius: 8px;
+        padding: 11px 20px;
     }
-    .footer-btn{
-        margin-right: 3px;
-        bottom
+    .pdf-btn a{
+        letter-spacing: 0px;
+        font-size: 11px;
+    }
+    .col-text h2{
+        font-size: 20px;
+        padding-top: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+    .col-text p{
+        font-size: 11px;
+        letter-spacing: 0px;
+        line-height: 19px;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+    .bio h3{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .radio-btn{
+        width: 9rem;
+        padding: 9px 10px;
+        margin-bottom: 1.5rem;
+    }
+    .radio-btn a{
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .image-wrapper{
+        width: 8rem;
+        flex-grow: 1;
+        height: 10rem;
+        margin:2px;
+    }
+    .image-slider{
+        padding: 3px;
+    }
+    /*////////////////////////////////////*/
+    /*//////// Scan qr code /////////////*/
+    .scan{
+        width: 90%;
+        height: 40%;
+        margin: auto;
+    }
+    .scan h2{
+        text-align: center;
+        padding-top: 15px;
+        font-size: 17px;
+    }
+    .scan img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 8px;
+    }
+    .gallery{
+        width: 1000px;
+        display: flex;
+        margin-bottom: 1rem;
+        padding-bottom: 10px;
+        overflow-x: scroll;
+    }
+    .gallery div{
+        grid-gap: 2px;
+        padding: 1px;
+        grid-template-columns: auto auto auto auto;
+    }
+    .gallery div img{
+        height: 140px;
+        width: 100%;
     }
 }
+/*////////////Completed Website/////////////*/
+/*/////////////////////////////////////////*/
